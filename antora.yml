@@ -1,0 +1,17 @@
+name: notification
+version: 'dev'
+prerelease: true
+title: Сервис уведомлений
+asciidoc:
+  attributes:
+    ns: 'Сервис уведомлений'
+    ne: 'событий уведомлений'
+    nss: 'настроек сервиса уведомлений'
+    pl-req: '5.5.6638 и выше'
+    wc-req: ''
+
+nav:
+- modules/ROOT/nav.adoc
+#- modules/common/common.adoc
+- modules/admin/admin.adoc
+#- modules/user/user.adoc
