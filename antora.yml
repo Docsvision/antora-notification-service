@@ -12,7 +12,6 @@ asciidoc:
     ws-req: '5.5.6638 и выше'
     mc-req: '5.5.6638 и выше'
     wc-req: ''
-    test: 'testicle'
 
 nav:
 - modules/ROOT/nav.adoc
