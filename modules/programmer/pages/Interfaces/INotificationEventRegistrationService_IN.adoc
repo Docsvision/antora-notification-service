@@ -1,0 +1,59 @@
+= INotificationEventRegistrationService -- интерфейс
+
+Интерфейс сервиса регистрации событий уведомлений
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Interfaces`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public interface INotificationEventRegistrationService
+----
+
+== Методы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`RegisterEvent(Guid);`
+a|Зарегистрировать неявное событие для отправки уведомления
+
+.Параметры:
+* `http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[objectId]` -- Идентификатор объекта, по которому отправляется уведомление
+
+|`RegisterEvent(Guid, Guid, bool);`
+a|Зарегистрировать событие для отправки уведомления
+
+.Параметры:
+* `http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[eventId]` -- Идентификатор события
+* `http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[objectId]` -- Идентификатор объекта, по которому отправляется уведомление
+* `http://msdn.microsoft.com/ru-ru/library/system.boolean.aspx[specificEventId]` -- Является ли значение eventId конечным идентификатором события или же это общее события и нужно вычислять конечный идентификатор по справочнику событий и типу\вида объекта
+
+|`RegisterEvent<T>(Guid, Guid, bool, T);`
+a|Зарегистрировать событие для отправки уведомления c передачей параметров события
+
+.Параметры:
+* `http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[eventId]` -- Идентификатор события
+* `http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[objectId]` -- Идентификатор объекта, по которому отправляется уведомление
+* `http://msdn.microsoft.com/ru-ru/library/system.boolean.aspx[specificEventId]` -- Является ли значение eventId конечным идентификатором события или же это общее события и нужно вычислять конечный идентификатор по справочнику событий и типу\вида объекта
+* `eventParameters` -- Параметры события, должно уметь сериализовываться в строку
+
+|`RegisterEventForObjects(Guid, IEnumerable<Guid>);`
+a|Зарегистрировать событие по группе объектов для отправки уведомления
+
+.Параметры:
+* `http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[eventId]` -- Идентификатор события
+* `http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[objectIds]` -- Набор идентификаторов объектов по событию
+
+|`RegisterEventForObjects<T>(Guid, IEnumerable<Guid>, T);`
+a|Зарегистрировать событие по группе объектов для отправки уведомления
+
+.Параметры:
+* `http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[eventId]` -- Идентификатор события
+* `http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[objectIds]` -- Набор идентификаторов объектов по событию
+* `eventParameters` -- Параметры события, должно уметь сериализовываться в строку
+
+|===

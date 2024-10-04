@@ -1,0 +1,22 @@
+= ResDescriptionAttribute -- класс
+
+Локализованное описание элемента из Resources[.ru].resx
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Models`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public sealed class ResDescriptionAttribute : DescriptionAttribute
+----
+
+// == Свойства
+//
+// [cols=",",options="header"]
+// |===
+// |Имя |Описание
+//
+//
+// |===

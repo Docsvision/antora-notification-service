@@ -1,0 +1,28 @@
+= INotificationSendService -- интерфейс
+
+Интерфейс сервиса с основной логикой отправки сформированных уведомлений. Должен осуществить отправку уведомления через указанный компонент\канал отправки.
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Interfaces`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public interface INotificationSendService : IContextService
+----
+
+== Методы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`SendNotification(Guid, NotificationForSend);`
+a|Отправить уведомление.
+
+.Параметры:
+* `http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[sendComponentId]` -- идентификатор канала
+* `xref:Entities/NotificationForSend_CL.adoc[notificationForSend]` -- модель сформированного и готового к отправке уведомления
+
+|===

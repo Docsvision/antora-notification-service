@@ -1,0 +1,27 @@
+= CardNotificationSettings -- класс
+
+Карточка настроек уведомления
+
+* *Пространство имён:* `DocsVision.CardLib.CardDefs`
+* *Сборка:* `Docsvision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public static class CardNotificationSettings
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[ID]`
+|Идентификатор карточки
+
+|`Alias`
+|Название карточки
+
+|===

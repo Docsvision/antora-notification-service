@@ -1,0 +1,62 @@
+= INotificationDataTransform -- интерфейс
+
+Интерфейс компонента для преобразования данных исходного объекта в модель уведомления, готового к отправке
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Interfaces`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public interface INotificationDataTransform
+----
+
+== Методы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`CreateNotificationsForSend(NotificationTransformSettings, NotificationObjectData);`
+a|Сформировать модель уведомления
+
+.Параметры:
+* `xref:Entities/NotificationTransformSettings_CL.adoc[notificationTransformSettings]` -- Настройки преобразования
+* `xref:Entities/NotificationObjectData_CL.adoc[data]` -- Данные преобразования
+
+Возвращаемое значение: `xref:Entities/NotificationForSend_CL.adoc[NotificationForSend]` -- Доступные параметры компонента формирования модели уведомления
+
+|`GetTheme(object, string);`
+a|Сформировать тему для уведомления
+
+.Параметры:
+* `http://msdn.microsoft.com/ru-ru/library/system.object.aspx[data]` -- Данные объекта
+* `http://msdn.microsoft.com/ru-ru/library/system.string.aspx[settings]` -- Настройки преобразования
+
+|`GetBody(object, string);`
+a|Сформировать содержание для уведомления
+
+.Параметры:
+* `http://msdn.microsoft.com/ru-ru/library/system.object.aspx[data]` -- Данные объекта
+* `http://msdn.microsoft.com/ru-ru/library/system.string.aspx[settings]` -- Настройки преобразования
+
+|`GetRecipients(object, string);`
+a|Определить получателей для уведомления
+
+.Параметры:
+* `http://msdn.microsoft.com/ru-ru/library/system.object.aspx[data]` -- Данные объекта
+* `http://msdn.microsoft.com/ru-ru/library/system.string.aspx[settings]` -- Настройки преобразования
+
+|===
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`Flags`
+|Возможности компонента формировать элементы модели
+
+|===

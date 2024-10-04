@@ -1,0 +1,33 @@
+= NotificationServiceSettings -- класс
+
+Справочник настроек сервиса уведомлений
+
+* *Пространство имён:* `DocsVision.CardLib.Entities`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class NotificationServiceSettings : BaseCard
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|xref:Entities/DataContextComponentSettings_CL.adoc[DataContextComponents]
+|Компоненты контекстов данных
+
+|xref:Entities/TransformComponentSettings_CL.adoc[TransformComponents]
+|Компоненты преобразования
+
+|xref:Entities/SendComponentSettings_CL.adoc[SendComponents]
+|Компоненты отправки уведомления
+
+|xref:Entities/NotificationReplySettings_CL.adoc[ReplyComponents]
+|Компоненты обработки ответа на уведомления
+
+|===

@@ -1,0 +1,27 @@
+= IInitializeWithSettings -- интерфейс
+
+Интерфейс инициализации со строкой настроек. При создании различных компонент нужно проверять, поддерживается ли интерфейс у порождаемого типа, если он поддерживается, и имеются настройки (например, из справочника настроек) -- использовать его для инициализации.
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Interfaces`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public interface IInitializeWithSettings
+----
+
+== Методы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`Initialize(string);`
+|Инициализировать объект строковыми настройками
+
+.Параметры:
+* `settings` -- настройки
+
+|===

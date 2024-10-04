@@ -1,0 +1,36 @@
+= DataContextComponentSettings -- класс
+
+Данные объекта
+
+* *Пространство имён:* `DocsVision.CardLib.Entities`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class NotificationForSend
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.object.aspx[Data]`
+|Любое значение, главное, чтобы используемый компонент для преобразования данных знал, что лежит в этом `object`
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[MainFiles]`
+|Список идентификаторов основных файлов объекта
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[AdditionalFiles]`
+|Список идентификаторов дополнительных файлов объекта
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[IncludedRecipients]`
+|Список дополнительных получателей
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[ExcludedRecipients]`
+|Список исключений получателей
+
+|===

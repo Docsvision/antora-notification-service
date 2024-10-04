@@ -1,0 +1,36 @@
+= NotificationReplySettings -- класс
+
+Класс настроек компонента обработки ответа на уведомление
+
+* *Пространство имён:* `DocsVision.CardLib.Entities`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class NotificationReplySettings : BaseCardSectionRow
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Name]`
+|Название компонента обработки ответа на уведомления
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Description]`
+|Описание компонента обработки ответа на уведомление
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[TypeName]`
+|Полное имя класса реализации компонента
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Settings]`
+|Сериализованные настройки компонента
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[MessagesCardID]`
+|Идентификатор привязанной карточки сообщений
+
+|===

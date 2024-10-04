@@ -1,0 +1,41 @@
+= NotificationServiceEventArgs -- класс
+
+Класс-модель регистрации события для записи\чтения его в очередь событий-уведомлений для обработки
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Models`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class NotificationServiceEventArgs : DocsVision.BackOffice.ObjectModel.Services.EventServiceEventArgs
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`xref:Entities/NotificationServiceEventData_CL.adoc[Data]`
+|Данные события
+
+|===
+
+== Методы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`GetEventDataDescription(ObjectContext)`
+|Данные события
+
+.Параметры:
+* `context` -- контекст объекта
+
+Возвращаемое значение: строковое описание обрабатываемого события WorkerService
+// , это не описание обрабатываемого события сервиса уведомлений
+
+|===

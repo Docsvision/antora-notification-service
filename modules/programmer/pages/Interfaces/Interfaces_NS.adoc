@@ -1,0 +1,35 @@
+= DocsVision.NotificationService.ObjectModel.Interfaces -- пространство имён
+
+Пространство имён `DocsVision.NotificationService.ObjectModel.Interfaces` содержит интерфейсы для работы с сервисом уведомлений.
+
+== Классы
+
+[cols=",",options="header"]
+|===
+|Класс |Описание
+
+|`xref:Interfaces/IInitializeWithSettings_IN.adoc[IInitializeWithSettings]`
+|Интерфейс инициализации со строкой настроек.
+
+|`xref:Interfaces/INotificationCardService_IN.adoc[INotificationCardService]`
+|Интерфейс инициализации карточки настроек уведомления
+
+|`xref:Interfaces/INotificationDataTransform_IN.adoc[INotificationDataTransform]`
+|Интерфейс компонента для преобразования данных исходного объекта в модель уведомления, готового к отправке
+
+|`xref:Interfaces/INotificationEventRegistrationService_IN.adoc[INotificationEventRegistrationService]`
+|Интерфейс сервиса регистрации событий уведомлений
+
+|`xref:Interfaces/INotificationObjectDataContext_IN.adoc[INotificationObjectDataContext]`
+|Интерфейс компонента для отправки уведомлений (канала уведомлений)
+
+|`xref:Interfaces/INotificationSendChannel_IN.adoc[INotificationSendChannel]`
+|Интерфейс компонента для отправки уведомлений (канала уведомлений)
+
+|`xref:Interfaces/INotificationSendService_IN.adoc[INotificationSendService]`
+|Интерфейс сервиса с основной логикой отправки сформированных уведомлений
+
+|`xref:Interfaces/INotificationService_IN.adoc[INotificationService]`
+|Интерфейс сервиса с основной логикой обработки уведомлений
+
+|===

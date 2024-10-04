@@ -1,0 +1,37 @@
+= INotificationCardService -- интерфейс
+
+Интерфейс инициализации карточки настроек уведомления
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Interfaces`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public interface INotificationCardService
+----
+
+== Методы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`CreateNotificationSettingsCard(KindsCardKind);`
+a|Инициализирует карточку настроек уведомления
+
+.Параметры:
+* `kind` -- вид карточки
+
+Возвращаемое значение: `xref:Entities/NotificationSettings_CL.adoc[NotificationSettings]` -- Карточка настроек уведомления
+
+|`CreateNotificationSendingSettingsCard(KindsCardKind);`
+a|Инициализирует Карточку настроек рассылки уведомлений
+
+.Параметры:
+* `kind` -- вид карточки
+
+Возвращаемое значение: `xref:Entities/NotificationSendingSettings_CL.adoc[NotificationSendingSettings]` -- Карточка настроек рассылки уведомлений
+
+|===

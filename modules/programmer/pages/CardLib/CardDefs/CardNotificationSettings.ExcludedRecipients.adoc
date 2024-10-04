@@ -1,0 +1,55 @@
+= CardNotificationSettings.ExcludedRecipients -- класс
+
+Исключенные получатели.
+
+* *Пространство имён:* `DocsVision.CardLib.CardDefs`
+* *Сборка:* `Docsvision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public static class ExcludedRecipients
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[ID]`
+|Идентификатор карточки
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Alias]`
+|Название карточки
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Employee]`
+|Идентификатор сотрудника
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Department]`
+|Идентификатор подразделения
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Group]`
+|Идентификатор группы
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Role]`
+|Идентификатор роли
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[PartnerEmployee]`
+|Идентификатор сотрудника контрагента
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Value]`
+|Простое значение
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Type]`
+a|Тип получателя (интерпретация ID):
+
+* `0` -- Сотрудник
+* `1` -- Подразделение
+* `2` -- Группа
+* `3` -- Роль
+* `4` -- Сотрудник контрагента
+* `5` -- Простое значение
+
+|===

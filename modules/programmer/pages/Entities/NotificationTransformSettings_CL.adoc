@@ -1,0 +1,36 @@
+= NotificationTransformSettings -- класс
+
+Класс с настройками и параметрами преобразования модели данных в модель уведомления
+
+* *Пространство имён:* `DocsVision.CardLib.Entities`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class NotificationTransformSettings
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[ThemeSettings]`
+|Настройки темы уведомления (например, сама тема или xslt-преобразование)
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[BodySettings]`
+|Настройки тела уведомления
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[RecipientsSettings]`
+|Настройки получателей уведомления
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[AdditionalReceivers]`
+|Дополнительные получатели уведомлений текущей модели преобразования
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[ExcludedReceivers]`
+|Исключения получателей уведомлений текущей модели
+
+|===

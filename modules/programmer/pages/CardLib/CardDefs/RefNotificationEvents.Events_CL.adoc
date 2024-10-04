@@ -1,0 +1,45 @@
+= RefNotificationEvents.Events -- класс
+
+События уведомлений
+
+* *Пространство имён:* `DocsVision.CardLib.CardDefs`
+* *Сборка:* `Docsvision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class Events
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[ID]`
+|Идентификатор карточки
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Alias]`
+|Название карточки
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[EventID]`
+|Идентификатор события
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Name]`
+|Название события
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Description]`
+|Описание события
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[CardTypeID]`
+|Идентификатор типа карточки, к которой привязано событие
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[CardKindID]`
+|Идентификатор вида карточки, к которой привязано событие
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[StateID]`
+|Идентификатор состояния карточки, связанного с событием
+
+|===

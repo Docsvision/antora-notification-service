@@ -1,0 +1,30 @@
+= NotificationSettings -- класс
+
+Карточка настроек уведомления
+
+* *Пространство имён:* `DocsVision.CardLib.Entities`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class NotificationSettings : BaseCard
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`xref:Entities/NotificationSettingsMainInfo_CL.adoc[MainInfo]`
+|Основная информация
+
+|`xref:Entities/NotificationRecipient_CL.adoc[Recipients]`
+|Получатели
+
+|`xref:Entities/NotificationExcludedRecipient_CL.adoc[ExcludedRecipients]`
+|Исключённые из рассылки получатели уведомления
+
+|===

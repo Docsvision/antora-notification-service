@@ -1,0 +1,50 @@
+= ComponentFactory -- класс
+
+Класс-фабрика компонент для создания и инициализации компонент, зарегистрированных в справочнике настроек службы уведомлений
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Services`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public static class ComponentFactory
+----
+
+== Методы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`CreateComponent<T>(string TypeName)`
+a|Создать компонент определённого `TypeName` и возвратить `T`
+
+.Параметры:
+* `T` -- Тип для приведения
+* `TypeName` -- Полное имя класса-конструктора
+
+Возвращаемое значение: `T` -- экземпляр класса, приведённый к `T`
+
+|`CreateComponent<T>(string TypeName, string settings)`
+a|Создать компонент определённого `TypeName`, инициализировать настройками settings (если поддерживается `aIInitializeWithSettings`) и возвратить `T`
+
+.Параметры:
+* `T` -- Тип для приведения
+* `TypeName` -- Полное имя класса-конструктора
+* `settings` -- Сериализованные настройки
+
+Возвращаемое значение: `T` -- экземпляр класса, приведённый к `T`
+
+|`InvokeMethod(object instance, string methodName, object[] parameters)`
+a|Вызвать метод рефлексивно для экземпляра объекта
+
+.Параметры:
+* `instance` -- Экземпляр класса
+* `methodName` -- Название метода
+* `parameters` -- Параметры метода
+
+Возвращаемое значение: `object` -- экземпляр объекта
+
+|===

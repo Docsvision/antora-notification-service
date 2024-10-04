@@ -1,0 +1,50 @@
+= DocsVision.CardLib.CardDefs -- пространство имён
+
+Пространство имён `DocsVision.CardLib.CardDefs` содержит определения видов карточек.
+
+== Классы
+
+[cols=",",options="header"]
+|===
+|Класс |Описание
+
+|`xref:CardLib/CardDefs/CardNotificationSendingSettings.MainInfo_CL.adoc[MainInfo]`
+|Основная информация карточки настроек рассылки уведомления
+
+|`xref:CardLib/CardDefs/CardNotificationSendingSettings_CL.adoc[CardNotificationSendingSettings]`
+|Карточка настроек рассылки уведомлений
+
+|`xref:CardLib/CardDefs/CardNotificationSettings.ExcludedRecipients.adoc[ExcludedRecipie]`
+|Исключенные получатели
+
+|`xref:CardLib/CardDefs/CardNotificationSettings.MainInfo_CL.adoc[MainInfo]`
+|Основная информация карточки настроек уведомления
+
+|`xref:CardLib/CardDefs/CardNotificationSettings.Recipients.adoc[Recipie]`
+|Получатели уведомления
+
+|`xref:CardLib/CardDefs/CardNotificationSettings_CL.adoc[CardNotificationSettings]`
+|Карточка настроек уведомления
+
+|`xref:CardLib/CardDefs/RefNotificationEvents.Events_CL.adoc[Events]`
+|События уведомлений
+
+|`xref:CardLib/CardDefs/RefNotificationEvents_CL.adoc[RefNotificationEvents]`
+|Справочник событий уведомлений
+
+|`xref:CardLib/CardDefs/RefNotificationServiceSettings.DataContextComponents_CL.adoc[DataContextComponents]`
+|Компоненты контекстов данных
+
+|`xref:CardLib/CardDefs/RefNotificationServiceSettings.ReplyComponents_CL.adoc[ReplyComponents]`
+|Компоненты обработки ответа на уведомления
+
+|`xref:CardLib/CardDefs/RefNotificationServiceSettings.SendComponents_CL.adoc[SendComponents]`
+|Компоненты отправки уведомления
+
+|`xref:CardLib/CardDefs/RefNotificationServiceSettings.TransformComponents_CL.adoc[TransformComponents]`
+|Компоненты преобразования
+
+|`xref:CardLib/CardDefs/RefNotificationServiceSettings_CL.adoc[RefNotificationServiceSettings]`
+|Справочник настроек сервиса уведомлений
+
+|===

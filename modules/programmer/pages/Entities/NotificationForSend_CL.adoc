@@ -1,0 +1,42 @@
+= DataContextComponentSettings -- класс
+
+Модель сформированного и готового к отправке уведомления, должно быть сериализуемым в строку
+
+* *Пространство имён:* `DocsVision.CardLib.Entities`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class NotificationForSend
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Theme]`
+|Тема сообщения
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Body]`
+|Тело сообщения
+
+|`xref:Entities/NotificationRecipient_CL.adoc[Recipients]`
+|Получатели уведомления
+
+|`xref:Entities/NotificationRecipient_CL.adoc[AdditionalRecipients]`
+|Дополнительные получатели уведомления
+
+|`xref:Entities/NotificationRecipient_CL.adoc[ExcludedRecipients]`
+|Не получают уведомления
+
+|`xref:Entities/AttachmentInfo_CL.adoc[MainAttachments]`
+|Основные файлы-вложения
+
+|`xref:Entities/AttachmentInfo_CL.adoc[AdditionalAttachments]`
+|Дополнительные файлы-вложения
+
+|===

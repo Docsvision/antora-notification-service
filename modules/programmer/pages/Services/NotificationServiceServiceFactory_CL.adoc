@@ -1,0 +1,13 @@
+= NotificationServiceServiceFactory -- класс
+
+Сервис сервиса уведомлений
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Services`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public sealed class NotificationServiceServiceFactory : ServiceFactory
+----

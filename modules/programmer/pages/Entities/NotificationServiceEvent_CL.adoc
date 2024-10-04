@@ -1,0 +1,39 @@
+= NotificationServiceEvent -- класс
+
+События
+
+* *Пространство имён:* `DocsVision.CardLib.Entities`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class NotificationServiceEvent : BaseCardSectionRow
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`xref:Entities/NotificationServiceEvent_CL.adoc[SubEvents]`
+|Поле с именем `Events` занято родительским классом `ObjectBase`. Подчиненные события.
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Name]`
+|Название события.
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Description]`
+|Описание события.
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[CardTypeId]`
+|Идентификатор типа карточки, к которой привязано событие.
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[CardKindId]`
+|Вид карточки, к которой привязано событие.
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[StateId]`
+|Идентификатор состояния карточки, связанного с событием.
+
+|===

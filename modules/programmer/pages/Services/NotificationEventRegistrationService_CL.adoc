@@ -1,0 +1,13 @@
+= NotificationEventRegistrationService -- класс
+
+Сервис регистрации уведомлений
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Services`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class NotificationEventRegistrationService : ContextService, INotificationEventRegistrationService
+----

@@ -1,0 +1,33 @@
+= NotificationServiceEventData -- класс
+
+Данные возникшего события
+
+* *Пространство имён:* `DocsVision.CardLib.Entities`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class NotificationServiceEventData
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[EventId]`
+|Идентификатор события
+
+|`http://msdn.microsoft.com/ru-ru/library/system.boolean.aspx[IsSpecificEventId]`
+|Особое или простое событие
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[ObjectIds]`
+|Список идентификаторов объектов для которых возникло событие и требуется уведомление
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Parameters]`
+|Сериализованные дополнительные параметры уведомления
+
+|===

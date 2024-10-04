@@ -1,0 +1,30 @@
+= CardNotificationSendingSettings.MainInfo -- класс
+
+Основная информация карточки настроек рассылки уведомления
+
+* *Пространство имён:* `DocsVision.CardLib.CardDefs`
+* *Сборка:* `Docsvision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public static class MainInfo
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Name]`
+|Название карточки
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[EventID]`
+|Событие
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[NotificationReferenceListID]`
+|Ссылки
+
+|===

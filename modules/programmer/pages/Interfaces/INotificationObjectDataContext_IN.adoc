@@ -1,0 +1,36 @@
+= INotificationSendChannel -- интерфейс
+
+Интерфейс компонента для отправки уведомлений (канала уведомлений)
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Interfaces`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public interface INotificationSendChannel
+----
+
+== Методы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`GetNotificationObjectData(Guid);`
+a|Получить Данные объекта.
+
+Возвращаемое значение: `xref:Entities/NotificationObjectData_CL.adoc[NotificationObjectData]` -- данные объекта
+
+.Параметры:
+* `xref:Entities/NotificationObjectData_CL.adoc[objectId]` -- идентификатор объекта
+
+|`Initialize(ObjectContext, NotificationSettings);`
+a|Инициализировать уведомление
+
+.Параметры:
+* `context` -- контекст объекта
+* `xref:Entities/NotificationSettings_CL.adoc[settings]` -- настройки уведомлений
+
+|===

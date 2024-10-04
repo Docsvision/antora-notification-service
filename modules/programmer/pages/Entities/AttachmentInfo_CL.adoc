@@ -1,0 +1,27 @@
+= AttachmentInfo -- класс
+
+Информация о файловом вложении уведомления
+
+* *Пространство имён:* `DocsVision.CardLib.Entities`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class AttachmentInfo
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Name]`
+|Преобразованное название вложения
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[FileId]`
+|Идентификатор файла вложения
+
+|===

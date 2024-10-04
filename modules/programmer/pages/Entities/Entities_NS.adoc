@@ -1,0 +1,68 @@
+= DocsVision.CardLib.Entities -- пространство имён
+
+Пространство имён `DocsVision.CardLib.Entities` содержит общие типы для различных видов карточек.
+
+== Классы
+
+[cols=",",options="header"]
+|===
+|Класс |Описание
+
+|`xref:Entities/AttachmentInfo_CL.adoc[AttachmentInfo]`
+|Информация о файловом вложении уведомления
+
+|`xref:Entities/DataContextComponentSettings_CL.adoc[DataContextComponentSettings]`
+|Настройки компонента контекста данных
+
+|`xref:Entities/NotificationExcludedRecipient_CL.adoc[NotificationExcludedRecipient]`
+|Исключённый из рассылки получатель уведомления
+
+|`xref:Entities/NotificationForSend_CL.adoc[NotificationForSend]`
+|Модель сформированного и готового к отправке уведомления, должно быть сериализуемым в строку
+
+|`xref:Entities/NotificationObjectData_CL.adoc[NotificationObjectData]`
+|Данные объекта
+
+|`xref:Entities/NotificationRecipient_CL.adoc[NotificationRecipient]`
+|Получатель уведомления
+
+|`xref:Entities/NotificationRecipientType_EN.adoc[NotificationRecipientType]`
+|Тип получателя уведомления
+
+|`xref:Entities/NotificationReplySettings_CL.adoc[NotificationReplySettings]`
+|Класс настроек компонента обработки ответа на уведомление
+
+|`xref:Entities/NotificationSendingSettings_CL.adoc[NotificationSendingSettings]`
+|Карточка настроек рассылки уведомлений
+
+|`xref:Entities/NotificationSendingSettingsMainInfo_CL.adoc[NotificationSendingSettingsMainInfo]`
+|Основная информация карточки настройки рассылки уведомлений
+
+|`xref:Entities/NotificationServiceEvent_CL.adoc[NotificationServiceEvent]`
+|События
+
+|`xref:Entities/NotificationServiceEventData_CL.adoc[NotificationServiceEventData]`
+|Данные возникшего события
+
+|`xref:Entities/NotificationServiceEvents_CL.adoc[NotificationServiceEvents]`
+|Справочник событий уведомлений
+
+|`xref:Entities/NotificationServiceSettings_CL.adoc[NotificationServiceSettings]`
+|Справочник настроек сервиса уведомлений
+
+|`xref:Entities/NotificationSettings_CL.adoc[NotificationSettings]`
+|Справочник настроек сервиса уведомлений
+
+|`xref:Entities/NotificationSettingsMainInfo_CL.adoc[NotificationSettingsMainInfo]`
+|Основная информация карточки настроек уведомления
+
+|`xref:Entities/NotificationTransformSettings_CL.adoc[NotificationTransformSettings]`
+|Класс с настройками и параметрами преобразования модели данных в модель уведомления
+
+|`xref:Entities/SendComponentSettings_CL.adoc[SendComponentSettings]`
+|Класс настроек компонента отправки уведомления
+
+|`xref:Entities/TransformComponentSettings_CL.adoc[TransformComponentSettings]`
+|Класс настроек компонента формирования уведомления
+
+|===

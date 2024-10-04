@@ -1,0 +1,24 @@
+= NotificationServiceEvents -- класс
+
+Справочник событий уведомлений
+
+* *Пространство имён:* `DocsVision.CardLib.Entities`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class NotificationServiceEvents: BaseCard
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`xref:Entities/NotificationServiceEvent_CL.adoc[RootEvents]`
+|Поле с именем `Events` занято родительским классом `ObjectBase`. События верхнего уровня.
+
+|===

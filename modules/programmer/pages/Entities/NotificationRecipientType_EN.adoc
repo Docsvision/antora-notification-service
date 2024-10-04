@@ -1,0 +1,29 @@
+= NotificationRecipientType -- перечисление
+
+Тип получателя уведомления
+
+* *Пространство имён:* `DocsVision.CardLib.Entities`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public enum NotificationRecipientType : int
+----
+
+== Члены
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`Employee` = `0` |Сотрудник
+|`Department` = `1` |Подразделение
+|`Group` = `2` |Группа
+|`Role` = `3` |Роль
+|`PartnerEmployee` = `4` |Сотрудник контрагента
+|`Value` = `5` |Простое значение
+|`Unknown` = `9` |Неизвестный тип значения
+
+|===

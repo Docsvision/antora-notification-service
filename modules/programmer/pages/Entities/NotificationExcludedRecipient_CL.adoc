@@ -1,0 +1,30 @@
+= NotificationExcludedRecipient -- класс
+
+Исключённый из рассылки получатель уведомления
+
+* *Пространство имён:* `DocsVision.CardLib.Entities`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class NotificationExcludedRecipient : BaseCardSectionRow
+----
+
+// == Свойства
+//
+// [cols=",",options="header"]
+// |===
+// |Имя |Описание
+//
+// // |`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[Id]`
+// // |Идентификатор исключенного получателя
+//
+// // |`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Value]`
+// // |Простое значение
+// //
+// // |`xref:Entities/NotificationRecipientType_EN.adoc[Type]`
+// // |Тип исключенного получателя (интерпретация ID)
+//
+// |===

@@ -1,0 +1,34 @@
+= DocsVision.NotificationService.ObjectModel.Models -- пространство имён
+
+Пространство имён `DocsVision.NotificationService.ObjectModel.Models` содержит интерфейсы для работы с сервисом уведомлений.
+
+== Классы
+
+[cols=",",options="header"]
+|===
+|Класс |Описание
+
+|`xref:Models/NotificationSendServiceEventArgs_CL.adoc[NotificationSendServiceEventArgs]`
+|Класс модель аргумента для сервиса отправки сообщений
+
+|`xref:Models/NotificationServiceEventArgs_CL.adoc[NotificationServiceEventArgs]`
+|Класс-модель регистрации события для записи\чтения его в очередь событий-уведомлений для обработки
+
+|`xref:Models/ResDescriptionAttribute_CL.adoc[ResDescriptionAttribute]`
+|Локализованное описание элемента из Resources[.ru].resx
+
+|`xref:Models/ResDisplayNameAttribute_CL.adoc[ResDisplayNameAttribute]`
+|Локализованное наименование элемента из Resources[.ru].resx
+
+|===
+
+== Перечисления
+
+[cols=",",options="header"]
+|===
+|Класс |Описание
+
+|`xref:Models/NotificationDataTransformFlags_EN.adoc[NotificationDataTransformFlags]`
+|Доступные параметры компонента формирования модели уведомления
+
+|===

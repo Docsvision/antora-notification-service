@@ -1,0 +1,27 @@
+= NotificationRecipient -- класс
+
+Получатель уведомления
+
+* *Пространство имён:* `DocsVision.CardLib.Entities`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class NotificationRecipient : BaseCardSectionRow
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.object.aspx[Id]`
+|Адрес получателя
+
+|`xref:Entities/NotificationRecipientType_EN.adoc[Value]`
+|Тип получателя (интерпретация ID)
+
+|===

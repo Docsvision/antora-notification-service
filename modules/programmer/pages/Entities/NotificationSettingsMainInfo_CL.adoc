@@ -1,0 +1,60 @@
+= NotificationSettingsMainInfo -- класс
+
+Основная информация карточки настроек уведомления
+
+* *Пространство имён:* `DocsVision.CardLib.Entities`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class NotificationSettingsMainInfo : BaseCardSectionRow
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Name]`
+|Название
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Description]`
+|Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[NotificationSubject]`
+|Настройки темы уведомления
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[NotificationText]`
+|Настройки тела уведомления
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[NotificationRecipients]`
+|Настройки получателей уведомлений
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[SubjectCustomComponent]`
+|Настройки темы уведомления
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[TextCustomComponent]`
+|Настройки тела уведомления
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[RecipientsCustomComponent]`
+|Настройки получателей уведомлений
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[DataContextComponentId]`
+|Компонент контекста данных
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[TransformComponentId]`
+|Компонент формирования модели уведомления
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[SendComponentId]`
+|Компонент отправки уведомления
+
+|`http://msdn.microsoft.com/ru-ru/library/system.boolean.aspx[AttachMainFile]`
+|Добавлять ли основные файлы<
+
+|`http://msdn.microsoft.com/ru-ru/library/system.boolean.aspx[AttachAdditionalFiles]`
+|Добавлять ли дополнительные файлы
+
+|===

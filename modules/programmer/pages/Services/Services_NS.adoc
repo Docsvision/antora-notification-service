@@ -1,0 +1,20 @@
+= DocsVision.NotificationService.ObjectModel.Services -- пространство имён
+
+Пространство имён `DocsVision.NotificationService.ObjectModel.Services` содержит сервисы для работы с уведомлениями.
+
+== Классы
+
+[cols=",",options="header"]
+|===
+|Класс |Описание
+
+|`xref:Services/ComponentFactory_CL.adoc[ComponentFactory]`
+|Класс-фабрика компонент для создания и инициализации компонент, зарегистрированных в справочнике настроек службы уведомлений
+
+|`xref:Services/NotificationEventRegistrationService_CL.adoc[NotificationEventRegistrationService]`
+|Сервис регистрации уведомлений
+
+|`xref:Services/NotificationServiceServiceFactory_CL.adoc[NotificationServiceServiceFactory]`
+|Сервис сервиса уведомлений
+
+|===

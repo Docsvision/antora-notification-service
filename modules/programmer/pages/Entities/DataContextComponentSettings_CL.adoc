@@ -1,0 +1,33 @@
+= DataContextComponentSettings -- класс
+
+Настройки компонента контекста данных
+
+* *Пространство имён:* `DocsVision.CardLib.Entities`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class DataContextComponentSettings : BaseCardSectionRow
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Name]`
+|Название обработчика контекста данных
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Description]`
+|Описание обработчика контекста данных
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[TypeName]`
+|Полное имя класса реализации компонента
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Settings]`
+|Сериализованные настройки компонента
+
+|===

@@ -1,0 +1,39 @@
+= RefNotificationServiceSettings.DataContextComponents -- класс
+
+Компоненты контекстов данных
+
+* *Пространство имён:* `DocsVision.CardLib.CardDefs`
+* *Сборка:* `Docsvision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class DataContextComponents
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[ID]`
+|Идентификатор карточки
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Alias]`
+|Название карточки
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Name]`
+|Название обработчика контекста данных
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Description]`
+|Описание обработчика контекста данных
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[TypeName]`
+|Полное имя класса реализации компонента
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Settings]`
+|Сериализованные настройки компонента
+
+|===

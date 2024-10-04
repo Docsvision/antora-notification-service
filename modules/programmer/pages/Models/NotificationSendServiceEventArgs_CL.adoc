@@ -1,0 +1,27 @@
+= NotificationSendServiceEventArgs -- класс
+
+Класс модель аргумента для сервиса отправки сообщений
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Models`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class NotificationSendServiceEventArgs : BackOffice.ObjectModel.Services.EventServiceEventArgs
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[SendComponentId]`
+|Идентификатор сервиса отправки
+
+|`xref:Entities/NotificationServiceEventData_CL.adoc[Data]`
+|Данные события
+
+|===

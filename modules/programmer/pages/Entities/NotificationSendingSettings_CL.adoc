@@ -1,0 +1,24 @@
+= NotificationSendingSettings -- класс
+
+Карточка настроек рассылки уведомлений
+
+* *Пространство имён:* `DocsVision.CardLib.Entities`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class NotificationSendingSettings : BaseCard
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`xref:Entities/NotificationSendingSettingsMainInfo_CL.adoc[MainInfo]`
+|Основная информация
+
+|===

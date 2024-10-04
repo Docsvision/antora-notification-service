@@ -1,0 +1,33 @@
+= TransformComponentSettings -- класс
+
+Класс настроек компонента формирования уведомления
+
+* *Пространство имён:* `DocsVision.CardLib.Entities`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class TransformComponentSettings : BaseCardSectionRow
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Name]`
+|Название компонента отправки уведомления
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Description]`
+|Описание компонента отправки уведомления
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[TypeName]`
+|Полное имя класса реализации компонента
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Settings]`
+|Сериализованные настройки компонента
+
+|===

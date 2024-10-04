@@ -1,0 +1,33 @@
+= NotificationDataTransformFlags -- перечисление
+
+Доступные параметры компонента формирования модели уведомления
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Models`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public enum NotificationDataTransformFlags
+----
+
+== Члены
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`SupportsSubjectParam` = `1`
+|Доступен параметр Темы
+
+|`SupportsTextParam` = `2`
+|Доступен параметр Содержания
+
+|`SupportsRecipeintsParam` = `4`
+|Доступен параметр Списка получателей
+
+|`SupportsDirectRecipients` = `8`
+|Разрешён прямой выбор получателей из справочника сотрудников
+
+|===
