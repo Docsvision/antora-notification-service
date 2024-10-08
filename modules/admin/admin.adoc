@@ -1,4 +1,7 @@
 * Администрирование модуля
 ** xref:install.adoc[]
 ** xref:config-module.adoc[]
+post-config.adoc
 ** xref:update-module.adoc[]
+** notification-events-directory.adoc
+** notification-settings-directory.adoc
