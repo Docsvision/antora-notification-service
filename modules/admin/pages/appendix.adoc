@@ -1,0 +1,76 @@
+= Приложение -- XSL преобразования для настройки уведомлений
+
+При рассылке уведомлений могут использоваться XSL-преобразования (XSLT) для формирования темы, текста и получателей уведомлений. По умолчанию XSLT применяется к XML карточки со связанными карточками, по которой отправляется уведомление.
+
+XSLT можно указать в качестве преобразования для всего уведомления, либо для отдельных частей: темы, содержания, получателей. Допускается комбинация компонентов преобразования. Например, можно выбрать XSLT для всего уведомления и переопределить компонент преобразования темы, выбрав "Простой текст".
+
+Получателей уведомления можно также задать при помощи указания XSLT в полях _Настройки получателей_ или _Получатели_.
+
+Ниже приведён пример XSLT для настройки уведомления по завершению задания.
+
+.Тема:
+[source,xml]
+----
+<xsl:stylesheet version="1.1" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	<xsl:template match="/">
+		<xsl:text>Завершено задание: </xsl:text>
+		<xsl:value-of select="substring(//MainInfo/@Name, 1, 120)"/>
+	</xsl:template>
+</xsl:stylesheet>
+----
+
+.Содержание:
+[source,xml]
+----
+<xsl:stylesheet version="1.1" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	<xsl:template name="convertdate" match="text()" mode="replace">
+		<xsl:param name="str" select="."/>
+		<xsl:copy-of select="substring($str, 9, 2)"/>
+		<xsl:text>.</xsl:text>
+		<xsl:copy-of select="substring($str, 6, 2)"/>
+		<xsl:text>.</xsl:text>
+		<xsl:copy-of select="substring($str, 1, 4)"/>
+	</xsl:template>
+	<xsl:template match="/">
+		<br/>
+		<b>
+			<xsl:text>Ваше задание было завершено. </xsl:text>
+		</b>
+		<br/>
+		<br/>
+		<b>
+			<xsl:text>Тема: </xsl:text>
+		</b>
+		<xsl:value-of select="//MainInfo/@Name"/>
+		<br/>
+		<b>
+			<xsl:text>Срок исполнения: </xsl:text>
+		</b>
+		<xsl:call-template name="convertdate">
+			<xsl:with-param name="str" select="//MainInfo/@EndDate"/>
+		</xsl:call-template>
+		<br/>
+		<br/>
+		<b>
+			<xsl:text>Содержание: </xsl:text>
+		</b>
+		<xsl:value-of disable-output-escaping="yes" select="//MainInfo/@Content"/>
+		<br/>
+		<br/>
+		<b>
+			<xsl:text>Комментарий исполнителя: </xsl:text>
+		</b>
+		<xsl:value-of select="//MainInfo/@Report"/>
+	</xsl:template>
+</xsl:stylesheet>
+----
+
+.Получатели (автор задания):
+[source,xml]
+----
+<xsl:stylesheet version="1.1" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	<xsl:template match="/">
+		<xsl:value-of select="//MainInfo/@Author"/>
+	</xsl:template>
+</xsl:stylesheet>
+----

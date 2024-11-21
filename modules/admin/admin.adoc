@@ -4,3 +4,4 @@
 ** xref:update-module.adoc[]
 ** xref:notification-events-directory.adoc[]
 ** xref:notification-settings-directory.adoc[]
+** xref:appendix.adoc[]
