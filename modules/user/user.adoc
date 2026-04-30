@@ -1,0 +1,2 @@
+.Руководство пользователя модуля "{ns}"
+* xref:notification-send-log.adoc[]
