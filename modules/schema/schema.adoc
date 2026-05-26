@@ -1,1 +1,2 @@
-* xref:NotificationService.adoc[]
+* Описание схем стандартных карточек
+** xref:NotificationService.adoc[]
