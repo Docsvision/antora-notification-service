@@ -1,0 +1,20 @@
+:page-layout: home
+
+= Базовые расширения
+
+Следующие классы включены в базовую версию модуля для упрощения эксплуатации.
+
+[tabs]
+====
+Базовые расширения::
++
+.Информация для разработчика
+****
+Стандартные классы расширений.
+
+* xref:transform-components.adoc[]
+* xref:context-components.adoc[]
+* xref:send-components.adoc[]
+* xref:base-extensions.adoc[Больше...]
+****
+====

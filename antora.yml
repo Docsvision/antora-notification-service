@@ -16,8 +16,8 @@ asciidoc:
 
 nav:
 - modules/ROOT/nav.adoc
-#- modules/common/common.adoc
+- modules/common/common.adoc
 - modules/admin/admin.adoc
-#- modules/user/user.adoc
+- modules/user/user.adoc
 - modules/schema/schema.adoc
 - modules/programmer/programmer.adoc

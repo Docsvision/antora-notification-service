@@ -1,4 +1,13 @@
 * Руководство разработчика модуля
+** xref:index.adoc[]
+** xref:add-extensions.adoc[]
+** xref:base-extensions.adoc[]
+*** xref:transform-components.adoc[]
+*** xref:context-components.adoc[]
+*** xref:send-components.adoc[]
+*** xref:source-components.adoc[]
+*** xref:post-processing-components.adoc[]
+*** xref:auxiliary-modules.adoc[]
 ** xref:api.adoc[]
 *** xref:CardLib/CardDefs/CardLib.CardDefs_NS.adoc[]
 **** xref:CardLib/CardDefs/CardNotificationSendingSettings.MainInfo_CL.adoc[]
