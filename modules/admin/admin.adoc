@@ -2,7 +2,7 @@
 ** xref:install.adoc[]
 ** xref:update-module.adoc[]
 ** xref:config-module.adoc[]
-** xref:notification-service.adoc[]
+** xref:location.adoc[]
 *** xref:notification-settings.adoc[]
 **** xref:settings-card.adoc[]
 **** xref:sending-card.adoc[]
