@@ -12,6 +12,7 @@ asciidoc:
     ws-req: '5.5.2, сборка 173 и выше'
     mc-req: '5.5.1, сборка ??? и выше'
     wc-req: '17, сборка 6478 и выше'
+    pl-req: '5.5.7927 и выше'
     dv-notification-service-admins-dir: 'Администраторы СУ'
 
 nav:
