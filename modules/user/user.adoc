@@ -15,5 +15,5 @@
 *** xref:xslt/task.adoc[]
 *** xref:xslt/task-model.adoc[]
 *** xref:xslt/mail.adoc[]
-*** xref:xslt/mail.adoc[]
+*** xref:xslt/mail-buttons.adoc[]
 *** xref:xslt/sms.adoc[]
