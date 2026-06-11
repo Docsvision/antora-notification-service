@@ -18,7 +18,7 @@ public class NotificationSendingSettings : BaseCard
 |===
 |Имя |Описание
 
-|`xref:Entities/NotificationSendingSettingsMainInfo_CL.adoc[MainInfo]`
+|`xref:Entities/CardNotificationSendingSettings/NotificationSendingSettingsMainInfo_CL.adoc[MainInfo]`
 |Основная информация
 
 |===

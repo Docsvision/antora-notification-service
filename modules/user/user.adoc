@@ -4,7 +4,6 @@
 ** xref:sending-card.adoc[]
 *** xref:on-event.adoc[]
 *** xref:on-schedule.adoc[]
-*** xref:sms-notifications.adoc[]
 ** xref:settings-card.adoc[]
 ** xref:events-dir.adoc[]
 *** xref:events-base.adoc[]
