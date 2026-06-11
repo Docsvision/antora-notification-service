@@ -2,7 +2,7 @@
 
 Карточка настроек рассылки уведомлений
 
-* *Пространство имён:* `DocsVision.CardLib.CardDefs`
+* *Пространство имён:* `DocsVision.NotificationService.CardLib.CardDefs`
 * *Сборка:* `Docsvision.NotificationService.ObjectModel.dll`
 
 == Синтаксис
@@ -21,7 +21,7 @@ public static class CardNotificationSendingSettings
 |`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[ID]`
 |Идентификатор карточки
 
-|`Alias`
-|Название карточки
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Alias]`
+|Наименование
 
 |===

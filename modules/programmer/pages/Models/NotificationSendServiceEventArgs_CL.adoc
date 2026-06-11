@@ -21,7 +21,20 @@ public class NotificationSendServiceEventArgs : BackOffice.ObjectModel.Services.
 |`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[SendComponentId]`
 |Идентификатор сервиса отправки
 
-|`xref:Entities/NotificationServiceEventData_CL.adoc[Data]`
-|Данные события
+|`xref:Entities/NotificationForSend_CL.adoc[Data]`
+|Уведомление для отправки
+
+|===
+
+== Методы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`ToString()`
+|Сериализует сообщение в строку
+
+*Возвращаемое значение*: описание обрабатываемого события WorkerService
 
 |===

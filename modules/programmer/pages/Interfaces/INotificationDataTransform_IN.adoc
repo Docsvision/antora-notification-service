@@ -12,6 +12,17 @@
 public interface INotificationDataTransform
 ----
 
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`xref:Models/NotificationDataTransformFlags_EN.adoc[Flags]`
+|Возможности компонента формировать элементы модели
+
+|===
+
 == Методы
 
 [cols=",",options="header"]
@@ -19,13 +30,23 @@ public interface INotificationDataTransform
 |Имя |Описание
 
 |`CreateNotificationsForSend(NotificationTransformSettings, NotificationObjectData);`
-a|Сформировать модель уведомления
+a|Формирует модель уведомления
 
 .Параметры:
-* `xref:Entities/NotificationTransformSettings_CL.adoc[notificationTransformSettings]` -- Настройки преобразования
-* `xref:Entities/NotificationObjectData_CL.adoc[data]` -- Данные преобразования
+* `xref:Entities/NotificationTransformSettings_CL.adoc[notificationTransformSettings]` -- настройки преобразования
+* `xref:Entities/NotificationObjectData_CL.adoc[data]` -- данные преобразования
 
-Возвращаемое значение: `xref:Entities/NotificationForSend_CL.adoc[NotificationForSend]` -- Доступные параметры компонента формирования модели уведомления
+*Возвращаемое значение*: `IEnumerable<xref:Entities/NotificationForSend_CL.adoc[NotificationForSend]>` -- доступные параметры компонента формирования модели уведомления
+
+|`CreateNotificationsForSend(NotificationTransformSettings, IEnumerable<NotificationObjectData>, NotificationServiceEventArgs);`
+a|Формирует модели уведомлений для коллекции данных
+
+.Параметры:
+* `xref:Entities/NotificationTransformSettings_CL.adoc[notificationTransformSettings]` -- настройки преобразования
+* `xref:Entities/NotificationObjectData_CL.adoc[data]` -- коллекция данных объектов
+* `xref:Models/NotificationServiceEventArgs_CL.adoc[eventArgs]` -- дополнительные параметры
+
+*Возвращаемое значение*: `IEnumerable<xref:Entities/NotificationForSend_CL.adoc[NotificationForSend]>` -- доступные параметры компонента формирования модели уведомления
 
 |`GetTheme(object, string);`
 a|Сформировать тему для уведомления
@@ -38,25 +59,14 @@ a|Сформировать тему для уведомления
 a|Сформировать содержание для уведомления
 
 .Параметры:
-* `http://msdn.microsoft.com/ru-ru/library/system.object.aspx[data]` -- Данные объекта
-* `http://msdn.microsoft.com/ru-ru/library/system.string.aspx[settings]` -- Настройки преобразования
+* `http://msdn.microsoft.com/ru-ru/library/system.object.aspx[data]` -- данные объекта
+* `http://msdn.microsoft.com/ru-ru/library/system.string.aspx[settings]` -- настройки преобразования
 
 |`GetRecipients(object, string);`
 a|Определить получателей для уведомления
 
 .Параметры:
-* `http://msdn.microsoft.com/ru-ru/library/system.object.aspx[data]` -- Данные объекта
-* `http://msdn.microsoft.com/ru-ru/library/system.string.aspx[settings]` -- Настройки преобразования
-
-|===
-
-== Свойства
-
-[cols=",",options="header"]
-|===
-|Имя |Описание
-
-|`Flags`
-|Возможности компонента формировать элементы модели
+* `http://msdn.microsoft.com/ru-ru/library/system.object.aspx[data]` -- данные объекта
+* `http://msdn.microsoft.com/ru-ru/library/system.string.aspx[settings]` -- настройки преобразования
 
 |===

@@ -1,0 +1,35 @@
+= CardSchedule -- класс
+
+Карточка расписания
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Entities`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class CardSchedule : BaseCard
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`xref:Entities/CardSchedule/ScheduleMainInfo_CL.adoc[MainInfo]`
+|Основная информация
+
+|===
+
+== Конструкторы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`CardSchedule()`
+|Инициализирует новый экземпляр класса `CardSchedule`.
+
+|===

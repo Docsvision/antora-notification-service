@@ -1,0 +1,24 @@
+= Sender -- класс
+
+Информация об отправителе
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Extensions`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class Sender
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`sms_address`
+|Адрес отправителя (номер телефона или текст)
+
+|===

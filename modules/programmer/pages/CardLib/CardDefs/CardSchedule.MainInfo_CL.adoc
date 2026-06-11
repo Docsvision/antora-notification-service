@@ -1,0 +1,90 @@
+= CardSchedule.MainInfo -- класс
+
+Основная информация карточки настроек рассылки уведомлений
+
+* *Пространство имён:* `DocsVision.NotificationService.CardLib.CardDefs`
+* *Сборка:* `Docsvision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public static class MainInfo
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[Id]`
+|ID секции
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Alias]`
+|Наименование
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Name]`
+|Название
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[ScheduleType]`
+|Тип расписания
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[RepeatDays]`
+|Период дней
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[RepeatWeeks]`
+|Период недель
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[RepeatWeekDays]`
+|Маска дней недели (1-7)
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[RepeatMonth]`
+|Период месяцев
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[MonthlyType]`
+|Тип повторения ежемесячно
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[RepeatMonthDay]`
+|Маска дней месяца в месяце (1-31)
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[RepeatMonthWeek]`
+|Маска недель в месяце (1-5)
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[RepeatMonthWeekDay]`
+|Маска дней недели в месяце (1-7)
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[DailyRepeatType]`
+|Тип периодичности в рамках дня
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[DailyPeriod]`
+|Повторять через число (минут,часов)
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[DayStartTime]`
+|Время начала рассылки
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[DayEndTime]`
+|Время прекращения рассылки
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[StartDate]`
+|Дата начала работы расписания
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[EndDate]`
+|Дата завершения работы расписания
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Infinite]`
+|Расписание работает всегда
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[MessagesId]`
+|Карточка сообщений
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[ScheduleServiceId]`
+|Сервис обработки периодических событий
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[ScheduleObjectId]`
+|Карточка связанная с расписанием
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[AlterMessageSend]`
+|Альтернативная рассылка сообщений
+
+|===

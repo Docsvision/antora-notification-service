@@ -1,0 +1,41 @@
+= LicenseManager -- класс
+
+Проверка доступных лицензий
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Extensions`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public abstract class CardXmlExportDataContext : INotificationObjectDataContext, IInitializeWithObjectContext
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[SendingFeatureID]
+|Идентификатор опции отправки
+
+|http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[ConfigFeatureID]
+|Идентификатор опции настройки
+
+|http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[OutlookFeatureId]
+|Идентификатор опции почтового клиента
+
+|===
+
+== Конструкторы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`GetFeatures(UserSession session)`
+|Получает опции лицензии
+
+|===

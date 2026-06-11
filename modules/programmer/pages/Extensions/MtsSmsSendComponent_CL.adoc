@@ -1,0 +1,92 @@
+= MtsSmsSendComponent -- класс
+
+Компонент отправки уведомлений через API МТС-Маркетолог.
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Extensions`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class MtsSmsSendComponent : INotificationSendChannel, IInitializeWithSettings, IInitializeWithObjectContext
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[SenderAddress]`
+|Адрес отправителя
+
+|`http://msdn.microsoft.com/ru-ru/library/system.int32.aspx[MessageLimit]`
+|Лимит сообщений
+
+|===
+
+== Поля
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`xref:Extensions/MtsSmsSendComponent.SMSServiceSettings_CL.adoc[CurrentSettings]`
+|Настройки SMS-сервиса
+
+|`Context`
+|Контекст объекта
+
+|`logManager`
+|Менеджер для записи журналов уведомлений
+
+|===
+
+== Методы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`Initialize(string)`
+a|Инициализирует отправку
+
+.Параметры:
+* `settings` -- сериализованные настройки
+
+|`InitializeWithContext(ObjectContext, string)`
+a|Инициализирует отправку с контекстом
+
+.Параметры:
+* `context` -- контекст объекта
+* `settings` -- сериализованные настройки
+
+|`SendNotification(NotificationForSend)`
+a|Отправляет уведомление
+
+.Параметры:
+* `xref:Entities/NotificationForSend_CL.adoc[notificationForSend]` -- модель сформированного и готового к отправке уведомления
+
+|`ExtractReceiverAddress(NotificationRecipient)`
+a|Извлекает адрес получателя
+
+.Параметры:
+* `xref:Entities/CardNotificationSettings/NotificationRecipient_CL.adoc[receiver]` -- получатель
+
+*Возвращаемое значение*: строка с адресом получателя
+
+|`SendMessage(IEnumerable<string>, String, out string)`
+a|Сообщение для отправки
+
+.Параметры:
+* `phoneNumbers` -- телефонные номера
+* `messageText` -- текст сообщения
+* `result` -- результат
+
+|`SendStatus()`
+a|Статус отправки
+
+*Возвращаемое значение*: статус отправки: true/false
+
+|===

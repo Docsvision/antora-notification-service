@@ -1,0 +1,38 @@
+= INotificationDataSourcePostHandler -- интерфейс
+
+Интерфейс компонента постобработки обнаруженных объектов
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Interfaces`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public interface INotificationDataSourcePostHandler
+----
+
+== Методы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`HandleObjects(IEnumerable<NotificationObjectInfo>);`
+a|Обрабатывает коллекцию найденных объектов
+
+.Параметры:
+* `foundObjects` -- найденные объекты
+
+*Возвращаемое значение*: `IEnumerable<xref:Entities/NotificationObjectInfo_CL.adoc[NotificationObjectGroupInfo]>` -- коллекция сгруппированных объектов
+
+|`HandleObjects(IEnumerable<NotificationObjectInfo>, string);`
+a|Обрабатывает коллекцию найденных объектов с параметрами
+
+.Параметры:
+* `foundObjects` -- найденные объекты
+* `handleParams` -- параметры обработки
+
+*Возвращаемое значение*: `IEnumerable<xref:Entities/NotificationObjectInfo_CL.adoc[NotificationObjectGroupInfo]>` -- коллекция сгруппированных объектов
+
+|===

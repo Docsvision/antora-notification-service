@@ -1,0 +1,54 @@
+= TRTaskDataContext -- класс
+
+Контекст данных, совместимый с почтовым клиентом
+
+* *Пространство имён:* `DocsVision.NotificationService.TaskRouting`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class TRTaskDataContext : CardXmlExportDataContext
+----
+
+== Конструкторы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`TRTaskDataContext()`
+|Создаёт новый экземпляр контекста данных
+
+|`TRTaskDataContext(ObjectContext, NotificationSettings)`
+|Создаёт новый экземпляр контекста данных с указанным контекстом и настройками уведомления
+
+.Параметры:
+* `context` -- контекст объектов
+* `xref:Entities/CardNotificationSettings/NotificationSettings_CL.adoc[settings]` -- настройки уведомления
+
+|===
+
+== Методы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`InitializeWithContext(ObjectContext, string)`
+a|Инициализирует контекст данных. Регистрирует мапперы и фабрики сервисов, создаёт сервис обработки событий задания
+
+.Параметры:
+* `context` -- контекст объектов
+* `settings` -- строковые настройки
+
+|`GetNotificationObjectData(IEnumerable<Guid>)`
+a|Формирует данные уведомления для задачи: создаёт XML-модель задачи, тему сообщения, список получателей и файлы-вложения
+
+.Параметры:
+* `objectIds` -- коллекция идентификаторов объектов (задач)
+
+*Возвращаемое значение*: `NotificationObjectData` -- данные уведомления, содержащие XML с моделью задачи, получателей, файлы и идентификатор карточки
+
+|===

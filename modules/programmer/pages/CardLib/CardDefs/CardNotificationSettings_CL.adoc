@@ -2,7 +2,7 @@
 
 Карточка настроек уведомления
 
-* *Пространство имён:* `DocsVision.CardLib.CardDefs`
+* *Пространство имён:* `DocsVision.NotificationService.CardLib.CardDefs`
 * *Сборка:* `Docsvision.NotificationService.ObjectModel.dll`
 
 == Синтаксис

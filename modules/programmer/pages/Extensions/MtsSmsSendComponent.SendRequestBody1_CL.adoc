@@ -1,0 +1,41 @@
+= SendRequestBody -- класс
+
+Тело запроса для отправки SMS через МТС Маркетолог
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Extensions`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class SendRequestBody(string optionsSender)
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`messages`
+|Список сообщений для отправки (тип List<Message>)
+
+|`options`
+|Опции запроса (тип Options)
+
+|===
+
+== Конструкторы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`SendRequestBody()`
+|Создаёт объект с пустыми опциями (sender = "")
+
+|`SendRequestBody(string optionsSender)`
+|Создаёт объект с указанным отправителем и классом = 1
+
+|===

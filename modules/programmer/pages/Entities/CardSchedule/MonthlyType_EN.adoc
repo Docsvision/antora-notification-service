@@ -1,0 +1,24 @@
+= MonthlyType -- перечисление
+
+Ежемесячное повторение
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Entities`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public enum MonthlyType
+----
+
+== Члены
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`MonthDay` = `0` |День месяца
+|`WeekDay` = `1` |День недели
+
+|===

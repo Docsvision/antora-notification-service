@@ -1,0 +1,53 @@
+= NotificationRecipient -- класс
+
+Получатель уведомления
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Entities`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class NotificationRecipient : BaseCardSectionRow
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[Employee]`
+|Сотрудник
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[Department]`
+|Подразделение
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[Group]`
+|Группа
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[Role]`
+|Роль
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[Partner]`
+|Сотрудник контрагента
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Value]`
+|Адрес получателя
+
+|`xref:Entities/CardNotificationSettings/NotificationRecipientType_EN.adoc[Value]`
+|Тип получателя (интерпретация ID)
+
+|===
+
+== Конструкторы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`NotificationRecipient()`
+|Инициализирует новый экземпляр класса `NotificationRecipient`.
+
+|===

@@ -1,0 +1,39 @@
+= SMSServiceSettings -- класс
+
+Настройки МТС Маркетолог
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Extensions`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class SMSServiceSettings
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Sender]`
+|Отправитель сообщения
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Login]`
+|Логин API
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Password]`
+|Пароль API
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[APIUrl]`
+|Адрес сервиса отправки
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[CheckUrl]`
+|Адрес сервиса проверки статуса
+
+|`http://msdn.microsoft.com/ru-ru/library/system.int32.aspx[MessageLimit]`
+|Лимит размера сообщения
+
+|===

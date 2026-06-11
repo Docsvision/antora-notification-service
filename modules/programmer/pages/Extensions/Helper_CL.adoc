@@ -1,0 +1,85 @@
+= Helper -- класс
+
+Содержит методы для работы с уведомлениями
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Extensions`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public static class Helper
+----
+
+== Методы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`CheckRecipientType(ObjectContext, string)`
+a|Проверяет тип получателя уведомления
+
+.Параметры:
+* `Context` -- контекст объекта
+* `http://msdn.microsoft.com/ru-ru/library/system.string.aspx[RecipientValue]` --
+
+*Возвращаемое значение*: `xref:Entities/CardNotificationSettings/NotificationRecipientType_EN.adoc[NotificationRecipientType]` -- тип получателя уведомления
+
+|`Serialize<T>(T)`
+a|Превращает объект в строку формата XML
+
+.Параметры:
+* `item` -- объект, который нужно превратить в XML-строку
+
+*Возвращаемое значение*: `http://msdn.microsoft.com/ru-ru/library/system.string.aspx[System.String]`
+
+|`Deserialize<T>(string)`
+a|Превращает строку XML в объект
+
+.Параметры:
+* `http://msdn.microsoft.com/ru-ru/library/system.string.aspx[data]` -- XML в объект
+
+*Возвращаемое значение*: `T`
+
+|`ExtractRecipients(string, Func <string, NotificationRecipient>)`
+a|Десериализовать строку в объект `NotificationRecipient`, разделив строку по символу `;` и используя по возможности стандартную десериализацию или переданный метод
+
+.Параметры:
+* `data` -- строка данных
+* `customRecipientExtractor` -- метод десериализации
+
+*Возвращаемое значение*: `List<xref:Entities/CardNotificationSettings/NotificationRecipient_CL.adoc[NotificationRecipient]>` -- список получателей уведомления
+
+|`ExtractRecipients<T>(IEnumerable<string>, Func<string, T>) where T : NotificationRecipient`
+a|Десериализовать набор строк в объект `NotificationRecipient`, используя по возможности стандартную десериализацию или переданный метод
+
+.Параметры:
+* `data` -- строки данных
+* `customRecipientExtractor` -- метод десериализации
+
+*Возвращаемое значение*: `List<xref:Entities/CardNotificationSettings/NotificationRecipient_CL.adoc[T]>` -- список получателей уведомления
+
+|`LogMessage(TraceLevel, string, Exception)`
+a|Записывает в журнал сообщение с указанным уровнем важности и (опционально) исключением
+
+.Параметры:
+* `level` -- уровень важности
+* `message` -- сообщение
+* `exception` -- исключение
+
+|`TraceError(string, Exception)`
+a|Записывает ошибку в журнал с сообщением и исключением
+
+.Параметры:
+* `message` -- сообщение
+* `exception` -- исключение
+
+|`TraceError(Exception exception)`
+a|Записывает в журнал только ошибку (без дополнительного сообщения)
+
+.Параметры:
+* `exception` -- исключение
+
+|===

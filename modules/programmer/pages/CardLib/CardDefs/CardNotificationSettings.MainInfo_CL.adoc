@@ -2,7 +2,7 @@
 
 Основная информация карточки настроек уведомления
 
-* *Пространство имён:* `DocsVision.CardLib.CardDefs`
+* *Пространство имён:* `DocsVision.NotificationService.CardLib.CardDefs`
 * *Сборка:* `Docsvision.NotificationService.ObjectModel.dll`
 
 == Синтаксис
@@ -17,6 +17,12 @@ public static class MainInfo
 [cols=",",options="header"]
 |===
 |Имя |Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[Id]`
+|ID секции
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Alias]`
+|Наименование
 
 |`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Name]`
 |Название

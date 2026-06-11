@@ -1,0 +1,38 @@
+= AdditionalDataSourcePostHandler -- класс
+
+Простой компонент постобработки для группировки по значению `Additional`
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Extensions`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class AdditionalDataSourcePostHandler : INotificationDataSourcePostHandler
+----
+
+== Методы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`HandleObjects(IEnumerable<NotificationObjectInfo>)`
+a|Вызывает второй метод `HandleObjects`, передавая `null` как параметр `handleParams`
+
+.Параметры:
+* `xref:Entities/NotificationObjectInfo_CL.adoc[foundObjects]` -- список объектов для группировки
+
+*Возвращаемое значение*: `IEnumerable<xref:Entities/NotificationObjectGroupInfo_CL.adoc[NotificationObjectGroupInfo]>` -- коллекция групп, где в каждой группе лежат объекты с одинаковым `Additional`
+
+|`HandleObjects(IEnumerable<NotificationObjectInfo>, string)`
+a|Группирует объекты по полю `Additional`
+
+.Параметры:
+* `xref:Entities/NotificationObjectInfo_CL.adoc[foundObjects]` -- список объектов для группировки
+* `http://msdn.microsoft.com/ru-ru/library/system.string.aspx[handleParams]` -- строковые параметры (в этом классе не используются, игнорируются)
+
+*Возвращаемое значение*: `IEnumerable<xref:Entities/NotificationObjectGroupInfo_CL.adoc[NotificationObjectGroupInfo]>` -- коллекция групп, где в каждой группе лежат объекты с одинаковым `Additional`
+
+|===

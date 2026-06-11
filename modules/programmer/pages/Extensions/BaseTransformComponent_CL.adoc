@@ -1,0 +1,78 @@
+= BaseTransformComponent -- класс
+
+Базовый класс для реализации компонентов преобразования
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Extensions`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public abstract class BaseTransformComponent : INotificationDataTransform
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`xref:Models/NotificationDataTransformFlags_EN.adoc[Flags]`
+|Параметры компонента формирования модели уведомления
+
+|===
+
+== Методы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`CreateNotificationsForSend(NotificationTransformSettings, IEnumerable<NotificationObjectData>, NotificationServiceEventArgs)`
+a|Создаёт уведомление для отправки
+
+.Параметры:
+* `xref:Entities/NotificationTransformSettings_CL.adoc[notificationTransformSettings]` -- настройки компонента преобразования уведомления
+* `xref:Entities/NotificationObjectData_CL.adoc[data]` -- данные уведомления
+* `xref:Models/NotificationServiceEventArgs_CL.adoc[eventArgs]` -- аргументы события
+
+*Возвращаемое значение*: `IEnumerable<xref:Entities/NotificationForSend_CL.adoc[NotificationForSend]>` -- сформированное и готовое к отправке уведомление
+
+|`CreateNotificationsForSend(NotificationTransformSettings, NotificationObjectData)`
+a|Создаёт уведомление для отправки
+
+.Параметры:
+* `xref:Entities/NotificationTransformSettings_CL.adoc[notificationTransformSettings]` -- настройки компонента преобразования уведомления
+* `xref:Entities/NotificationObjectData_CL.adoc[data]` -- данные уведомления
+
+*Возвращаемое значение*: `IEnumerable<xref:Entities/NotificationForSend_CL.adoc[NotificationForSend]>` -- сформированное и готовое к отправке уведомление
+
+|`GetTheme(object, string)`
+a|Получает тему уведомления
+
+.Параметры:
+* `http://msdn.microsoft.com/ru-ru/library/system.string.aspx[data]` -- данные из источника
+* `http://msdn.microsoft.com/ru-ru/library/system.object.aspx[settings]` -- настройки в текстовом виде, указывающие, как извлечь данные
+
+*Возвращаемое значение*: `http://msdn.microsoft.com/ru-ru/library/system.string.aspx[System.String]` -- тема уведомления
+
+|`GetBody(object, string)`
+a|Получает содержание уведомления
+
+.Параметры:
+* `http://msdn.microsoft.com/ru-ru/library/system.string.aspx[data]` -- данные из источника
+* `http://msdn.microsoft.com/ru-ru/library/system.object.aspx[settings]` -- настройки в текстовом виде, указывающие, как извлечь данные
+
+*Возвращаемое значение*: `http://msdn.microsoft.com/ru-ru/library/system.string.aspx[System.String]` -- содержание уведомления
+
+|`GetRecipients(object, string)`
+a|Получает получателей уведомления
+
+.Параметры:
+* `http://msdn.microsoft.com/ru-ru/library/system.string.aspx[data]` -- данные из источника
+* `http://msdn.microsoft.com/ru-ru/library/system.object.aspx[settings]` -- настройки в текстовом виде, указывающие, как извлечь данные
+
+*Возвращаемое значение*: `List<xref:Entities/CardNotificationSettings/NotificationRecipient_CL.adoc[NotificationRecipient]>` -- список получателей уведомления
+
+|===

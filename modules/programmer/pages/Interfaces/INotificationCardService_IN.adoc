@@ -1,6 +1,6 @@
 = INotificationCardService -- интерфейс
 
-Интерфейс инициализации карточки настроек уведомления
+Сервис работы с карточками уведомлений
 
 * *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Interfaces`
 * *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
@@ -24,14 +24,30 @@ a|Инициализирует карточку настроек уведомл�
 .Параметры:
 * `kind` -- вид карточки
 
-Возвращаемое значение: `xref:Entities/NotificationSettings_CL.adoc[NotificationSettings]` -- Карточка настроек уведомления
+*Возвращаемое значение*: `xref:Entities/CardNotificationSettings/NotificationSettings_CL.adoc[NotificationSettings]` -- карточка настроек уведомления
 
 |`CreateNotificationSendingSettingsCard(KindsCardKind);`
-a|Инициализирует Карточку настроек рассылки уведомлений
+a|Инициализирует карточку настроек рассылки уведомлений
 
 .Параметры:
 * `kind` -- вид карточки
 
-Возвращаемое значение: `xref:Entities/NotificationSendingSettings_CL.adoc[NotificationSendingSettings]` -- Карточка настроек рассылки уведомлений
+*Возвращаемое значение*: `xref:Entities/CardNotificationSettings/NotificationSettings_CL.adoc[NotificationSendingSettings]` -- карточка настроек рассылки уведомлений
+
+|`CreateScheduleCard(Guid);`
+a|Инициализирует карточку расписания
+
+.Параметры:
+* `parentCardId` -- ID родительской карточки
+
+*Возвращаемое значение*: `xref:CardLib/CardDefs/CardSchedule_CL.adoc[CardSchedule]` -- карточка расписания
+
+|`GetDataTransformFlags(Guid);`
+a|Получает параметры компонента формирования модели уведомления
+
+.Параметры:
+* `componentID` -- идентификатор компонента
+
+*Возвращаемое значение*: `xref:Models/NotificationDataTransformFlags_EN.adoc[NotificationDataTransformFlags]`
 
 |===

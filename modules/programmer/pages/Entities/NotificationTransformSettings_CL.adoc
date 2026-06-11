@@ -2,7 +2,7 @@
 
 Класс с настройками и параметрами преобразования модели данных в модель уведомления
 
-* *Пространство имён:* `DocsVision.CardLib.Entities`
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Entities`
 * *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
 
 == Синтаксис
@@ -27,10 +27,10 @@ public class NotificationTransformSettings
 |`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[RecipientsSettings]`
 |Настройки получателей уведомления
 
-|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[AdditionalReceivers]`
+|`IEnumerable<http://msdn.microsoft.com/ru-ru/library/system.string.aspx[string]> AdditionalReceivers`
 |Дополнительные получатели уведомлений текущей модели преобразования
 
-|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[ExcludedReceivers]`
+|`IEnumerable<http://msdn.microsoft.com/ru-ru/library/system.string.aspx[string]> ExcludedReceivers`
 |Исключения получателей уведомлений текущей модели
 
 |===

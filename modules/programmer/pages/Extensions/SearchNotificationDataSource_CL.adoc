@@ -1,0 +1,34 @@
+= SearchNotificationDataSource -- класс
+
+Компонент источника данных, выполняющий поисковый запрос
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Extensions`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class SearchNotificationDataSource : INotificationDataSource, IInitializeWithObjectContext
+----
+
+== Методы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`FindNotificationObjects(string handleParams)`
+a|Выполняет поисковый запрос и возвращает найденные объекты
+
+* `handleParams` -- идентификатор поиска (GUID) или XML-строка с параметрами поиска
+
+*Возвращаемое значение*: `IEnumerable<NotificationObjectInfo>` -- коллекция идентификаторов найденных объектов
+
+|`InitializeWithContext(ObjectContext context, string settings)`
+a|Инициализирует компонент контекстом объекта
+
+* `context` -- контекст объекта
+* `settings` -- строковые настройки
+
+|===

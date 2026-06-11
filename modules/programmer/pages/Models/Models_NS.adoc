@@ -14,11 +14,14 @@
 |`xref:Models/NotificationServiceEventArgs_CL.adoc[NotificationServiceEventArgs]`
 |Класс-модель регистрации события для записи\чтения его в очередь событий-уведомлений для обработки
 
-|`xref:Models/ResDescriptionAttribute_CL.adoc[ResDescriptionAttribute]`
-|Локализованное описание элемента из Resources[.ru].resx
+// |`xref:Models/ResDescriptionAttribute_CL.adoc[ResDescriptionAttribute]`
+// |Локализованное описание элемента из Resources[.ru].resx
+//
+// |`xref:Models/ResDisplayNameAttribute_CL.adoc[ResDisplayNameAttribute]`
+// |Локализованное наименование элемента из Resources[.ru].resx
 
-|`xref:Models/ResDisplayNameAttribute_CL.adoc[ResDisplayNameAttribute]`
-|Локализованное наименование элемента из Resources[.ru].resx
+|`xref:Models/ScheduleEventArgs_CL.adoc[ScheduleEventArgs]`
+|Класс-модель регистрации события для записи\чтения его в очередь событий-уведомлений для обработки
 
 |===
 

@@ -1,0 +1,68 @@
+= MailSendComponent -- класс
+
+Компонент отправки уведомлений через почту, должен вычитывать свои настройки через сервис настроек (настройки соединения с почтой). Может создавать шлюз Workflow к почте и инициализировать его этими настройками.
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Extensions`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class MailSendComponent : INotificationSendChannel, IInitializeWithSettings, IInitializeWithObjectContext
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|http://msdn.microsoft.com/ru-ru/library/system.string.aspx[SenderAddress]
+|Адрес отправителя
+
+|===
+
+== Конструкторы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`MailSendComponent()`
+|Инициализирует новый экземпляр класса `MailSendComponent`.
+
+|`MailSendComponent(ObjectContext)`
+|Инициализирует новый экземпляр класса `MailSendComponent` с указанными свойствами.
+
+.Параметры:
+* `context` -- контекст объекта
+
+|===
+
+== Методы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`InitializeWithContext(ObjectContext, string)`
+a|Инициализирует отправку с указанным контекстом
+
+.Параметры:
+* `context` -- контекст объекта
+* `settings` -- сериализованные настройки
+
+|`Initialize(string)`
+a|Инициализирует отправку с указанными настройками
+
+.Параметры:
+* `settings` -- сериализованные настройки
+
+|`SendNotification(NotificationForSend)`
+a|Отправляет уведомление
+
+.Параметры:
+* `xref:Entities/NotificationForSend_CL.adoc[notificationForSend]`
+
+|===

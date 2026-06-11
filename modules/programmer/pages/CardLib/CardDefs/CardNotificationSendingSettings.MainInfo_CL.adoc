@@ -1,8 +1,8 @@
-= CardNotificationSendingSettings.MainInfo -- класс
+= CardNotificationSendingSettings -- класс
 
 Основная информация карточки настроек рассылки уведомления
 
-* *Пространство имён:* `DocsVision.CardLib.CardDefs`
+* *Пространство имён:* `DocsVision.NotificationService.CardLib.CardDefs`
 * *Сборка:* `Docsvision.NotificationService.ObjectModel.dll`
 
 == Синтаксис
@@ -18,6 +18,12 @@ public static class MainInfo
 |===
 |Имя |Описание
 
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[ID]`
+|ID секции
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Alias]`
+|Наименование
+
 |`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Name]`
 |Название карточки
 
@@ -26,5 +32,26 @@ public static class MainInfo
 
 |`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[NotificationReferenceListID]`
 |Ссылки
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Periodic]`
+|Периодическая рассылка
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[ScheduleCardID]`
+|Карточка расписания
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[DataSourceComponentID]`
+|Компонент источника данных
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[DataSourceParameters]`
+|Настройки компонента источника данных
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[DataPostHandlerComponentID]`
+|Компонент постобработки данных
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[DataPostHandlerParameters]`
+|Настройки компонента постобработки данных
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Enabled]`
+|Активна
 
 |===

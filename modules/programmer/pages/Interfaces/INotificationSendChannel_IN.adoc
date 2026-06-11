@@ -12,6 +12,17 @@
 public interface INotificationSendChannel
 ----
 
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[SenderAddress]`
+|Адрес отправителя
+
+|===
+
 == Методы
 
 [cols=",",options="header"]

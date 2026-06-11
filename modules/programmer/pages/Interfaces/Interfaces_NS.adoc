@@ -8,11 +8,20 @@
 |===
 |Класс |Описание
 
+|`xref:Interfaces/IInitializeWithObjectContext_IN.adoc[IInitializeWithObjectContext]`
+|Интерфейс инициализации с контекстом объектов
+
 |`xref:Interfaces/IInitializeWithSettings_IN.adoc[IInitializeWithSettings]`
 |Интерфейс инициализации со строкой настроек.
 
 |`xref:Interfaces/INotificationCardService_IN.adoc[INotificationCardService]`
 |Интерфейс инициализации карточки настроек уведомления
+
+|`xref:Interfaces/INotificationDataSource_IN.adoc[INotificationDataSource_IN]`
+|Интерфейс компонента источника данных
+
+|`xref:Interfaces/INotificationDataSourcePostHandler_IN.adoc[INotificationDataSourcePostHandler_IN]`
+|Интерфейс компонента постобработки обнаруженных объектов
 
 |`xref:Interfaces/INotificationDataTransform_IN.adoc[INotificationDataTransform]`
 |Интерфейс компонента для преобразования данных исходного объекта в модель уведомления, готового к отправке
@@ -31,5 +40,8 @@
 
 |`xref:Interfaces/INotificationService_IN.adoc[INotificationService]`
 |Интерфейс сервиса с основной логикой обработки уведомлений
+
+|`xref:Interfaces/IScheduleService_IN.adoc[IScheduleService]`
+|Сервис работы с расписанием уведомлений
 
 |===

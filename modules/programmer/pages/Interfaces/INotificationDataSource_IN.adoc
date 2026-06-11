@@ -1,0 +1,29 @@
+= INotificationDataSource -- интерфейс
+
+Интерфейс компонента источника данных
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Interfaces`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public interface INotificationDataSource
+----
+
+== Методы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`FindNotificationObjects(string);`
+a|Находит объекты для уведомления по параметру поиска
+
+.Параметры:
+* `handleParams` -- параметры поиска
+
+*Возвращаемое значение*: `IEnumerable<xref:Entities/NotificationObjectInfo_CL.adoc[NotificationObjectInfo]>` -- коллекция найденных объектов
+
+|===

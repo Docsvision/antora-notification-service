@@ -1,0 +1,56 @@
+= PlainTextComponent -- класс
+
+Компонент преобразования "Простой текст"
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Extensions`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class PlainTextComponent : BaseTransformComponent
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`xref:Models/NotificationDataTransformFlags_EN.adoc[Flags]`
+|Флаги, указывающие на поддержку текстовых параметров, параметров темы, получателей и прямых получателей
+
+|===
+
+== Методы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`GetTheme(object, string)`
+a|Возвращает тему уведомления
+
+* `data` -- данные уведомления
+* `settings` -- строка настроек, которая становится темой
+
+*Возвращаемое значение*: `string` -- тема уведомления
+
+|`GetBody(object, string)`
+a|Возвращает тело уведомления
+
+* `data` -- данные уведомления
+* `settings` -- строка настроек, которая становится телом
+
+*Возвращаемое значение*: `string` -- тело уведомления
+
+|`GetRecipients(object, string)`
+a|Возвращает список получателей уведомления
+
+* `data` -- данные уведомления
+* `settings` -- строка настроек, содержащая информацию о получателях
+
+*Возвращаемое значение*: `List<xref:Entities/CardNotificationSettings/NotificationRecipient_CL.adoc[NotificationRecipient]>` -- список получателей
+
+|===

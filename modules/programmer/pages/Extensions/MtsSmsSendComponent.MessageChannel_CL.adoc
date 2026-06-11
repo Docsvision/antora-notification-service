@@ -1,0 +1,27 @@
+= MessageChannel -- класс
+
+Канал доставки (получатель)
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Extensions`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class MessageChannel
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`message_id`
+|Идентификатор сообщения
+
+|`msisdn`
+|Номер телефона получателя
+
+|===

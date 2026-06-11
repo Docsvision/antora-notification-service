@@ -1,0 +1,51 @@
+= NotificationSendingSettingsMainInfo -- класс
+
+Основная информация карточки настройки рассылки уведомлений
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Entities`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class NotificationSendingSettingsMainInfo : BaseCardSectionRow
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Name]`
+|Наименование
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[EventId]`
+|Событие из справочника событий
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[NotificationReferenceListId]`
+|Ссылки на созданные карточки настройки рассылки уведомлений
+
+|`http://msdn.microsoft.com/ru-ru/library/system.boolean.aspx[Periodic]`
+|Указывает, является ли уведомление периодическим
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[ScheduleCardID]`
+|Идентификатор карточки расписания
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[DataSourceComponentID]`
+|Идентификатор компонента источника данных
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[DataSourceParameters]`
+|Параметры для компонента источника данных в формате строки
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[DataPostHandlerComponentID]`
+|Идентификатор компонента постобработки данных
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[DataPostHandlerParameters]`
+|Параметры компонента постобработки данных
+
+|`http://msdn.microsoft.com/ru-ru/library/system.boolean.aspx[Enabled]`
+|Указывает, активна ли данная настройка уведомления
+
+|===

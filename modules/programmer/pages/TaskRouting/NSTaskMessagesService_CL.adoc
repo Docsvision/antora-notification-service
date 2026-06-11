@@ -1,0 +1,70 @@
+= NSTaskMessagesService -- класс
+
+Класс обработки стандартных событий карточки "Задание"
+
+* *Пространство имён:* `DocsVision.NotificationService.TaskRouting`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class NSTaskMessagesService : TRTaskMessagesEventHandlerService
+----
+
+== Поля
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[ServiceId]`
+|Уникальный идентификатор сервиса
+
+|===
+
+== Методы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`Initialize(ObjectContext)`
+a|Инициализирует сервис контекстом объектов
+
+.Параметры:
+* `context` -- контекст объектов
+
+|`GetTaskFiles(BackOffice.ObjectModel.Task)`
+a|Возвращает список файлов, связанных с заданием
+
+.Параметры:
+* `xref:programmer:BackOffice-ObjectModel-Task:Task_CL.adoc[task]` -- задание
+
+*Возвращаемое значение*: `List<http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[Guid]>` -- список идентификаторов файлов
+
+|`OnTaskStart(BackOffice.ObjectModel.Task)`
+a|Обрабатывает событие старта задания. Регистрирует событие уведомления о старте
+
+.Параметры:
+* `xref:programmer:BackOffice-ObjectModel-Task:Task_CL.adoc[task]` -- задание
+
+|`OnTaskCompletion(BackOffice.ObjectModel.Task)`
+a|Обрабатывает событие завершения задания. Регистрирует событие уведомления о завершении
+
+.Параметры:
+* `xref:programmer:BackOffice-ObjectModel-Task:Task_CL.adoc[task]` -- задание
+
+|`OnTaskAcceptance(BackOffice.ObjectModel.Task)`
+a|Обрабатывает событие принятия задания. Регистрирует событие уведомления о принятии
+
+.Параметры:
+* `xref:programmer:BackOffice-ObjectModel-Task:Task_CL.adoc[task]` -- задание
+
+|`OnTaskRejection(BackOffice.ObjectModel.Task)`
+a|Обрабатывает событие отклонения задания. Регистрирует событие уведомления об отклонении
+
+.Параметры:
+* `xref:programmer:BackOffice-ObjectModel-Task:Task_CL.adoc[task]` -- задание
+
+|===

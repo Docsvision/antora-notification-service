@@ -1,0 +1,41 @@
+<xsl:stylesheet version="1.1" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:template name="convertdate" match="text()" mode="replace">
+        <xsl:param name="str" select="."/>
+        <xsl:copy-of select="substring($str, 9, 2)"/>
+        <xsl:text>.</xsl:text>
+        <xsl:copy-of select="substring($str, 6, 2)"/>
+        <xsl:text>.</xsl:text>
+        <xsl:copy-of select="substring($str, 1, 4)"/>
+    </xsl:template>
+    <xsl:template match="/">
+        <br/>
+        <b>
+            <xsl:text>Ваше задание было завершено. </xsl:text>
+        </b>
+        <br/>
+        <br/>
+        <b>
+            <xsl:text>Тема: </xsl:text>
+        </b>
+        <xsl:value-of select="//MainInfo/@Name"/>
+        <br/>
+        <b>
+            <xsl:text>Срок исполнения: </xsl:text>
+        </b>
+        <xsl:call-template name="convertdate">
+            <xsl:with-param name="str" select="//MainInfo/@EndDate"/>
+        </xsl:call-template>
+        <br/>
+        <br/>
+        <b>
+            <xsl:text>Содержание: </xsl:text>
+        </b>
+        <xsl:value-of disable-output-escaping="yes" select="//MainInfo/@Content"/>
+        <br/>
+        <br/>
+        <b>
+            <xsl:text>Комментарий исполнителя: </xsl:text>
+        </b>
+        <xsl:value-of select="//MainInfo/@Report"/>
+    </xsl:template>
+</xsl:stylesheet>

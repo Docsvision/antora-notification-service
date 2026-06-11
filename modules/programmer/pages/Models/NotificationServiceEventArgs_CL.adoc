@@ -36,6 +36,8 @@ public class NotificationServiceEventArgs : DocsVision.BackOffice.ObjectModel.Se
 * `context` -- контекст объекта
 
 Возвращаемое значение: строковое описание обрабатываемого события WorkerService
-// , это не описание обрабатываемого события сервиса уведомлений
+
+|`ToString()`
+|Сериализует событие в строку
 
 |===

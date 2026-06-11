@@ -2,7 +2,7 @@
 
 Получатели уведомления
 
-* *Пространство имён:* `DocsVision.CardLib.CardDefs`
+* *Пространство имён:* `DocsVision.NotificationService.CardLib.CardDefs`
 * *Сборка:* `Docsvision.NotificationService.ObjectModel.dll`
 
 == Синтаксис
@@ -19,13 +19,13 @@ public static class Recipients
 |Имя |Описание
 
 |`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[ID]`
-|Идентификатор карточки
+|Идентификатор секции
 
 |`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Alias]`
-|Название карточки
+|Наименование
 
 |`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Employee]`
-|Идентификатор сотрудника<
+|Идентификатор сотрудника
 
 |`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Department]`
 |Идентификатор подразделения

@@ -1,0 +1,80 @@
+= DocsVision.NotificationService.ObjectModel.Extensions -- пространство имён
+
+Пространство имён `DocsVision.NotificationService.ObjectModel.Extensions` содержит вспомогательные классы-расширения для работы с сервисом уведомлений
+
+== Классы
+
+[cols=",",options="header"]
+|===
+|Класс |Описание
+
+|`xref:Extensions/AdditionalDataSourcePostHandler_CL.adoc[AdditionalDataSourcePostHandler]`
+|Простой компонент постобработки для группировки по значению `Additional`
+
+|`xref:Extensions/BaseTransformComponent_CL.adoc[BaseTransformComponent]`
+|Базовый класс для компонентов преобразования
+
+|`xref:Extensions/CardXmlExportDataContext.CardXmlExportWith1LevelDataContext_CL.adoc[CardXmlExportDataContext.CardXmlExportWith1LevelDataContext]`
+|Класс контекста данных с экспортом до 1 уровня иерархии карточек и строк справочников
+
+|`xref:Extensions/CardXmlExportDataContext.CardXmlExportWith2LevelDataContext_CL.adoc[CardXmlExportDataContext.CardXmlExportWith2LevelDataContext]`
+|Класс контекста данных с экспортом до 2 уровня иерархии карточек и строк справочников
+
+|`xref:Extensions/CardXmlExportDataContext.CardXmlExportWith3LevelDataContext_CL.adoc[CardXmlExportDataContext.CardXmlExportWith3LevelDataContext]`
+|Класс контекста данных с экспортом до 3 уровня иерархии карточек и строк справочников
+
+|`xref:Extensions/CardXmlExportDataContext_CL.adoc[CardXmlExportDataContext]`
+|Контекст экспорта карточки в XML для использования в качестве источника данных уведомления
+
+|`xref:Extensions/Helper_CL.adoc[Helper]`
+|Вспомогательный класс с методами сериализации и десериализации объектов в XML
+
+|`xref:Extensions/LicenseManager_CL.adoc[LicenseManager]`
+|Проверка доступных лицензий
+
+|`xref:Extensions/MailSendComponent_CL.adoc[MailSendComponent]`
+|Компонент отправки уведомлений по Email
+
+|`xref:Extensions/MtsSmsSendComponent.Content_CL.adoc[MtsSmsSendComponent.Content]`
+|Содержимое SMS-сообщения (текст)
+
+|`xref:Extensions/MtsSmsSendComponent.Message_CL.adoc[MtsSmsSendComponent.Message]`
+|Сообщение для отправки через SMS-шлюз МТС
+
+|`xref:Extensions/MtsSmsSendComponent.MessageChannel_CL.adoc[MtsSmsSendComponent.MessageChannel]`
+|Канал доставки (получатель) с идентификатором сообщения и номером телефона
+
+|`xref:Extensions/MtsSmsSendComponent.Options_CL.adoc[MtsSmsSendComponent.Options]`
+|Опции запроса к SMS-шлюзу (класс сообщения, отправитель)
+
+|`xref:Extensions/MtsSmsSendComponent.Sender_CL.adoc[MtsSmsSendComponent.Sender]`
+|Информация об отправителе SMS (адрес)
+
+|`xref:Extensions/MtsSmsSendComponent.SendRequestBody1_CL.adoc[MtsSmsSendComponent.SendRequestBody1]`
+|Тело запроса для отправки SMS через МТС Маркетолог
+
+|`xref:Extensions/MtsSmsSendComponent.SendRequestBody_CL.adoc[MtsSmsSendComponent.SendRequestBody]`
+|Тело запроса для отправки SMS через МТС Маркетолог
+
+|`xref:Extensions/MtsSmsSendComponent.SMSServiceSettings_CL.adoc[MtsSmsSendComponent.SMSServiceSettings]`
+|Настройки SMS-сервиса (отправитель, лимит сообщений)
+
+|`xref:Extensions/MtsSmsSendComponent_CL.adoc[MtsSmsSendComponent]`
+|Компонент отправки SMS через шлюз МТС Маркетолог
+
+|`xref:Extensions/OverdueTasksNotificationDataSource_CL.adoc[OverdueTasksNotificationDataSource]`
+|Компонент источника данных, осуществляющий поиск просроченных заданий
+
+|`xref:Extensions/PlainTextComponent_CL.adoc[PlainTextComponent]`
+|Компонент преобразования "Простой текст" (возвращает настройки как есть)
+
+|`xref:Extensions/SearchNotificationDataSource_CL.adoc[SearchNotificationDataSource]`
+|Компонент источника данных, выполняющий поисковый запрос
+
+|`xref:Extensions/TaskNotificationDataSourcePostHandler_CL.adoc[TaskNotificationDataSourcePostHandler]`
+|Компонент постобработки для группировки событий по заданиям (по исполнителям)
+
+|`xref:Extensions/XsltDataTransformComponent_CL.adoc[XsltDataTransformComponent]`
+|Компонент преобразования Xslt (применяет XSLT-шаблон к данным)
+
+|===

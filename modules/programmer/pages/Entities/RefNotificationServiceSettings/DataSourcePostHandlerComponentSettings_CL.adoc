@@ -1,0 +1,57 @@
+= DataSourcePostHandlerComponentSettings -- класс
+
+Запись в справочнике компонента постобработки данных
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Entities`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class DataSourcePostHandlerComponentSettings : BaseCardSectionRow
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Name]`
+|Название компонента постобработки
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Description]`
+|Описание компонента постобработки
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[TypeName]`
+|Полное имя класса реализации компонента
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Settings]`
+|Сериализованные настройки компонента
+
+|`xref:programmer:BackOffice-ObjectModel-BaseCard:BaseCard_CL.adoc[MessagesCardID]`
+|Идентификатор привязанной карточки сообщений
+
+|===
+
+== Конструкторы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`DataSourcePostHandlerComponentSettings()`
+|Инициализирует новый экземпляр класса `DataSourcePostHandlerComponentSettings`.
+
+|`DataSourcePostHandlerComponentSettings()`
+a|Инициализирует новый экземпляр класса `DataSourcePostHandlerComponentSettings` с указанными свойствами.
+
+.Параметры:
+* `Name`
+* `Description`
+* `TypeName`
+* `Settings`
+* `MessagesCardID`
+
+|===

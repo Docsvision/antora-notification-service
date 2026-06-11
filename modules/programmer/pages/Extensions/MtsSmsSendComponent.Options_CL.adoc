@@ -1,0 +1,31 @@
+= Options -- класс
+
+Опции запроса
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Extensions`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class Options
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`class_val`
+|Класс сообщения
+
+*Тип*: int?. В JSON сериализуется как class
+
+|`from`
+|Отправитель
+
+*Тип*: Sender
+
+|===

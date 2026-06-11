@@ -1,0 +1,32 @@
+= CardXmlExportDataContext.CardXmlExportWith2LevelDataContext -- класс
+
+Класс контекста данных с экспортом до 2 уровня иерархии карточек и строк справочников
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Extensions`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class CardXmlExportWith2LevelDataContext : CardXmlExportDataContext
+----
+
+== Конструкторы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`CardXmlExportWith2LevelDataContext`
+|Инициализирует новый экземпляр класса `CardXmlExportWith2LevelDataContext`
+
+|`CardXmlExportWith2LevelDataContext(ObjectContext, NotificationSettings) : base(context, settings)`
+
+a|Инициализирует новый экземпляр класса `CardXmlExportWith2LevelDataContext` с указанными свойствами
+
+.Параметры:
+* `context` -- контекст объекта
+* `xref:Entities/CardNotificationSettings/NotificationSettings_CL.adoc[settings]` -- настройки уведомления
+
+|===

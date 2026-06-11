@@ -1,0 +1,24 @@
+= Content -- класс
+
+Содержимое сообщения
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Extensions`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class Content
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`short_text`
+|Текст SMS-сообщения
+
+|===

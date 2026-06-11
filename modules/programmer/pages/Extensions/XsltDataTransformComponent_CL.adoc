@@ -1,0 +1,58 @@
+= XsltDataTransformComponent -- класс
+
+Компонент XSL-преобразования
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Extensions`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class XsltDataTransformComponent : BaseTransformComponent
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`Flags`
+|Флаги, указывающие на поддержку текстовых параметров, параметров темы, получателей и прямых получателей
+
+*Тип*: `NotificationDataTransformFlags`
+
+|===
+
+== Методы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`GetTheme(object data, string settings)`
+a|Применяет XSL-преобразование к данным и возвращает результат как тему уведомления
+
+* `data` -- данные уведомления
+* `settings` -- строка с XSL-преобразованием
+
+*Возвращаемое значение*: `string` -- результат преобразования
+
+|`GetBody(object data, string settings)`
+a|Применяет XSLT-преобразование к данным и возвращает результат как тело уведомления
+
+* `data` -- данные уведомления
+* `settings` -- строка с XSL-преобразованием
+
+*Возвращаемое значение*: `string` -- результат преобразования
+
+|`GetRecipients(object data, string settings)`
+a|Применяет Xslt-преобразование, разбивает результат по символу `;` и возвращает список получателей
+
+* `data` -- данные уведомления
+* `settings` -- строка с XSL-преобразованием
+
+*Возвращаемое значение*: `List<NotificationRecipient>` -- список получателей с типом `Unknown`
+
+|===

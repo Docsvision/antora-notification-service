@@ -18,6 +18,9 @@ public enum NotificationDataTransformFlags
 |===
 |Имя |Описание
 
+|`None` = `0`
+|Доступен параметр Темы
+
 |`SupportsSubjectParam` = `1`
 |Доступен параметр Темы
 
@@ -29,5 +32,8 @@ public enum NotificationDataTransformFlags
 
 |`SupportsDirectRecipients` = `8`
 |Разрешён прямой выбор получателей из справочника сотрудников
+
+|`SupportsMultipleObjects` = `32`
+|Поддерживается единое уведомление по нескольким объектам
 
 |===

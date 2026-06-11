@@ -1,0 +1,28 @@
+= IInitializeWithObjectContext -- интерфейс
+
+Интерфейс инициализации с контекстом объектов
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Interfaces`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public interface IInitializeWithObjectContext
+----
+
+== Методы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`InitializeWithContext(ObjectContext, string)`
+a|Инициализировать объект
+
+.Параметры:
+* `context` -- контекст объектов
+* `settings` -- сериализованные настройки
+
+|===

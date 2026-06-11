@@ -1,6 +1,6 @@
 = NotificationServiceServiceFactory -- класс
 
-Сервис сервиса уведомлений
+Фабрика регистрации сервисов
 
 * *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Services`
 * *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
@@ -11,3 +11,25 @@
 ----
 public sealed class NotificationServiceServiceFactory : ServiceFactory
 ----
+
+== Методы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`GetService(Type)`
+a|Получает тип сервиса
+
+*Возвращаемое значение*: сервис в виде объекта
+
+.Параметры:
+* `serviceType` --
+
+|`RegisterFactory(ObjectContext)`
+a|Регистрирует фабрику
+
+.Параметры:
+* `objectContext` -- контекст объекта
+
+|===

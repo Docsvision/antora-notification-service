@@ -1,0 +1,27 @@
+= NotificationObjectInfo -- класс
+
+Информация об объекте
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Entities`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class NotificationObjectInfo
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[ObjectId]`
+|Идентификатор объекта
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Additional]`
+|Дополнительная информация
+
+|===

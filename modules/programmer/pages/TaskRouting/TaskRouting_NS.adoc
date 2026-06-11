@@ -1,0 +1,17 @@
+= DocsVision.NotificationService.ObjectModel.TaskRouting -- пространство имён
+
+Пространство имён `DocsVision.NotificationService.ObjectModel.TaskRouting` содержит классы для интеграции системы уведомлений с маршрутизацией заданий. Обеспечивает обработку событий жизненного цикла задач и формирование контекста данных для отправки уведомлений по электронной почте.
+
+== Классы
+
+[cols=",",options="header"]
+|===
+|Класс |Описание
+
+|`xref:TaskRouting/NSTaskMessagesService_CL.adoc[NSTaskMessagesService]`
+|Класс обработки стандартных событий карточки "Задание"
+
+|`xref:TaskRouting/TRTaskDataContext_CL.adoc[TRTaskDataContext]`
+|Контекст данных, совместимый с почтовым клиентом
+
+|===

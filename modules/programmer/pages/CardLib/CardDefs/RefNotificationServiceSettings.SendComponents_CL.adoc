@@ -2,14 +2,14 @@
 
 Компоненты отправки уведомления
 
-* *Пространство имён:* `DocsVision.CardLib.CardDefs`
+* *Пространство имён:* `DocsVision.NotificationService.CardLib.CardDefs`
 * *Сборка:* `Docsvision.NotificationService.ObjectModel.dll`
 
 == Синтаксис
 
 [source,csharp]
 ----
-public class SendComponents
+public static class SendComponents
 ----
 
 == Свойства
@@ -19,10 +19,10 @@ public class SendComponents
 |Имя |Описание
 
 |`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[ID]`
-|Идентификатор карточки
+|Идентификатор секции
 
 |`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Alias]`
-|Название карточки
+|Наименование
 
 |`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Name]`
 |Название компонента отправки уведомления

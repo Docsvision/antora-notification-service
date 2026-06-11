@@ -9,12 +9,9 @@
 |Класс |Описание
 
 |`xref:Services/ComponentFactory_CL.adoc[ComponentFactory]`
-|Класс-фабрика компонент для создания и инициализации компонент, зарегистрированных в справочнике настроек службы уведомлений
-
-|`xref:Services/NotificationEventRegistrationService_CL.adoc[NotificationEventRegistrationService]`
-|Сервис регистрации уведомлений
+|Класс-фабрика компонентов для создания и инициализации компонент, зарегистрированных в справочнике настроек службы уведомлений
 
 |`xref:Services/NotificationServiceServiceFactory_CL.adoc[NotificationServiceServiceFactory]`
-|Сервис сервиса уведомлений
+|Фабрика регистрации сервисов
 
 |===

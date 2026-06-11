@@ -1,0 +1,51 @@
+= OverdueTasksNotificationDataSource -- класс
+
+Компонент источника данных, осуществляющий поиск просроченных заданий
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Extensions`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class OverdueTasksNotificationDataSource : SearchNotificationDataSource
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`from`
+|Отправитель
+
+*Тип*: Sender
+
+|`to`
+|Список получателей
+
+Тип List<MessageCha*nne*:l>
+
+|`content`
+|Содержимое сообщения
+
+*Тип*: Content
+
+|===
+
+== Методы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`FindNotificationObjects(string)`
+a|Находит задачи для уведомления
+
+* `findParameter` -- параметр поиска
+
+*Возвращаемое значение*: `IEnumerable<xref:Entities/NotificationObjectInfo_CL.adoc[NotificationObjectInfo]>` -- коллекция идентификаторов найденных объектов (задач)
+
+|===

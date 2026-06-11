@@ -1,8 +1,8 @@
-= DataContextComponentSettings -- класс
+= NotificationForSend -- класс
 
 Модель сформированного и готового к отправке уведомления, должно быть сериализуемым в строку
 
-* *Пространство имён:* `DocsVision.CardLib.Entities`
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Entities`
 * *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
 
 == Синтаксис
@@ -24,19 +24,55 @@ public class NotificationForSend
 |`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Body]`
 |Тело сообщения
 
-|`xref:Entities/NotificationRecipient_CL.adoc[Recipients]`
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[RecipientId]`
+|Идентификатор получателя
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[SenderAddress]`
+|Адрес отправителя
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[SourceCardId]`
+|Идентификатор карточки настроек рассылки
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[CardId]`
+|Идентификатор источника уведомлений
+
+|`List<xref:Entities/CardNotificationSettings/NotificationRecipient_CL.adoc[NotificationRecipient]> Recipients`
 |Получатели уведомления
 
-|`xref:Entities/NotificationRecipient_CL.adoc[AdditionalRecipients]`
+|`List<xref:Entities/CardNotificationSettings/NotificationRecipient_CL.adoc[NotificationRecipient]> AdditionalRecipients`
 |Дополнительные получатели уведомления
 
-|`xref:Entities/NotificationRecipient_CL.adoc[ExcludedRecipients]`
+|`List<xref:Entities/CardNotificationSettings/NotificationExcludedRecipient_CL.adoc[NotificationExcludedRecipient]> ExcludedRecipients`
 |Не получают уведомления
 
-|`xref:Entities/AttachmentInfo_CL.adoc[MainAttachments]`
+|`List<xref:Entities/AttachmentInfo_CL.adoc[AttachmentInfo]> MainAttachments`
 |Основные файлы-вложения
 
-|`xref:Entities/AttachmentInfo_CL.adoc[AdditionalAttachments]`
+|`List<xref:Entities/AttachmentInfo_CL.adoc[AttachmentInfo]> AdditionalAttachments`
 |Дополнительные файлы-вложения
+
+|===
+
+== Методы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`ToString()`
+a|Сериализует модель уведомления в строку
+
+.Аргументы:
+* "Тема: \{0}" -- Theme -- "<нет>"
+* Body -- "<нет>"
+* "Содержание: \{0}"  -- body.Length
+* "Вложения: \{0} (\{1})" -- MainAttachments?.Count
+* "Получатели: \{0} (\{1}) за исключением \{2}" -- Recipients?.Count
+* "RecipientId: \{0}" -- RecipientId
+* "SenderAddress: \{0}" -- SenderAddress
+* "SourceCardId: \{0}" -- SourceCardId
+* "CardId: \{0}" -- CardId
+
+*Возвращаемое значение*: строка с описанием уведомления
 
 |===

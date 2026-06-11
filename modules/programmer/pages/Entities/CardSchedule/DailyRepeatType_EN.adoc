@@ -1,0 +1,25 @@
+= DailyRepeatType -- перечисление
+
+Ежедневное повторение
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Entities`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public enum DailyRepeatType
+----
+
+== Члены
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`Once` = `0` |Единоразово
+|`Minutes` = `1` |Минуты
+|`Hours` = `2` |Часы
+
+|===

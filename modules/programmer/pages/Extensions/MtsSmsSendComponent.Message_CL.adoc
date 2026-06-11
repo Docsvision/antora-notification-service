@@ -1,0 +1,36 @@
+= Message -- класс
+
+Сообщение для отправки
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Extensions`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class Message
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`from`
+|Отправитель
+
+*Тип*: Sender
+
+|`to`
+|Список получателей
+
+Тип List<MessageCha*nne*:l>
+
+|`content`
+|Содержимое сообщения
+
+*Тип*: Content
+
+|===

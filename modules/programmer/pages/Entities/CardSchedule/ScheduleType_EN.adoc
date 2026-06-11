@@ -1,0 +1,30 @@
+= ScheduleType -- перечисление
+
+Тип расписания
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Entities`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public enum MonthlyType
+----
+
+== Члены
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`Daily = 0`
+|Ежедневное
+
+|`Weekly = 1`
+|Еженедельное
+
+|`Monthly = 2`
+|Ежемесячное
+
+|===

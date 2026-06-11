@@ -1,0 +1,45 @@
+= WeekBitmask -- перечисление
+
+Маска дней недели
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Entities`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public enum MonthlyType
+----
+
+== Члены
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`None = 0`
+|Нет
+
+|`Monday = 1`
+|Понедельник
+
+|`Tuesday = 2`
+|Вторник
+
+|`Wednesday = 4`
+|Среда
+
+|`Thirsday = 8`
+|Четверг
+
+|`Friday = 1`
+|Пятница
+
+|`Saturday = 3`
+|Суббота
+
+|`Sunday = 64`
+|Воскресенье
+
+|===

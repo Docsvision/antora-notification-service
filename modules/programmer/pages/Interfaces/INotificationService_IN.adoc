@@ -1,6 +1,6 @@
 = INotificationSendService -- интерфейс
 
-Интерфейс сервиса с основной логикой обработки уведомлений. Должен преобразовать произошедшее событие в пачку уведомлений в очередях сервиса отправки уведомлений.
+Сервис обработки входящих событий уведомлений
 
 * *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Interfaces`
 * *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
@@ -18,11 +18,23 @@ public interface INotificationSendService : IContextService
 |===
 |Имя |Описание
 
-|`SendNotification(Guid, NotificationForSend);`
-a|Отправить уведомление.
+|`HandleNotificationEvent(NotificationServiceEventArgs)`
+a|Обрабатывает событие уведомления
 
 .Параметры:
-* `http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[sendComponentId]` -- идентификатор канала
-* `xref:Entities/NotificationForSend_CL.adoc[notificationForSend]` -- модель сформированного и готового к отправке уведомления
+* `eventData` -- данные события
+
+|`HandleBuildEvent(NotificationServiceEventArgs)`
+a|Обрабатывает событие построения
+
+.Параметры:
+* `e` -- данные события
+
+|`HandleScheduledEvent(CardSchedule, string)`
+a|Обрабатывает событие по расписанию
+
+.Параметры:
+* `sheduleCard` -- карточка расписания
+* `settings` -- настройки
 
 |===

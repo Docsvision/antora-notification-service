@@ -2,14 +2,14 @@
 
 Справочник настроек сервиса уведомлений
 
-* *Пространство имён:* `DocsVision.CardLib.CardDefs`
+* *Пространство имён:* `DocsVision.NotificationService.CardLib.CardDefs`
 * *Сборка:* `Docsvision.NotificationService.ObjectModel.dll`
 
 == Синтаксис
 
 [source,csharp]
 ----
-public class RefNotificationServiceSettings
+public static class RefNotificationServiceSettings
 ----
 
 == Свойства
@@ -19,9 +19,9 @@ public class RefNotificationServiceSettings
 |Имя |Описание
 
 |`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[ID]`
-|Идентификатор карточки
+|Идентификатор справочника
 
 |`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Alias]`
-|Название карточки
+|Наименование
 
 |===

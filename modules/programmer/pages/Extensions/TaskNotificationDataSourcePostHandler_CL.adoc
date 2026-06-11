@@ -1,0 +1,67 @@
+= TaskNotificationDataSourcePostHandler -- класс
+
+Компонент постобработки для группировки событий по заданиям
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Extensions`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public class TaskNotificationDataSourcePostHandler : INotificationDataSourcePostHandler, IInitializeWithObjectContext
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`Context`
+|Контекст объекта (не показан в коде, но используется)
+
+*Тип*: `ObjectContext`
+
+|`Session`
+|Сессия пользователя (не показана в коде, но используется)
+
+*Тип*: `UserSession`
+
+|`ContextLimit`
+|Лимит контекста (не показан в коде, но используется)
+
+*Тип*: `int`
+
+|===
+
+== Методы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`InitializeWithContext(ObjectContext context, string settings)`
+a|Инициализирует компонент контекстом и сессией пользователя
+
+* `context` -- контекст объекта
+* `settings` -- строковые настройки
+
+*Возвращаемое значение*: `void`
+
+|`HandleObjects(IEnumerable<NotificationObjectInfo> foundObjects)`
+a|Группирует объекты, вызывая перегрузку с `handleParams = null`
+
+* `foundObjects` -- коллекция объектов для группировки
+
+*Возвращаемое значение*: `IEnumerable<NotificationObjectGroupInfo>` -- коллекция сгруппированных объектов
+
+|`HandleObjects(IEnumerable<NotificationObjectInfo> foundObjects, string handleParams)`
+a|Группирует задачи по их исполнителям
+
+* `foundObjects` -- коллекция объектов (задач) для группировки
+* `handleParams` -- строковые параметры
+
+*Возвращаемое значение*: `IEnumerable<NotificationObjectGroupInfo>` -- коллекция групп, где ключ -- идентификатор исполнителя, значение -- список ID задач
+
+|===

@@ -7,62 +7,91 @@
 [cols=",",options="header"]
 |===
 |Класс |Описание
-
-|`xref:Entities/AttachmentInfo_CL.adoc[AttachmentInfo]`
-|Информация о файловом вложении уведомления
-
-|`xref:Entities/DataContextComponentSettings_CL.adoc[DataContextComponentSettings]`
-|Настройки компонента контекста данных
-
-|`xref:Entities/NotificationExcludedRecipient_CL.adoc[NotificationExcludedRecipient]`
-|Исключённый из рассылки получатель уведомления
-
-|`xref:Entities/NotificationForSend_CL.adoc[NotificationForSend]`
-|Модель сформированного и готового к отправке уведомления, должно быть сериализуемым в строку
-
-|`xref:Entities/NotificationObjectData_CL.adoc[NotificationObjectData]`
-|Данные объекта
-
-|`xref:Entities/NotificationRecipient_CL.adoc[NotificationRecipient]`
-|Получатель уведомления
-
-|`xref:Entities/NotificationRecipientType_EN.adoc[NotificationRecipientType]`
-|Тип получателя уведомления
-
-|`xref:Entities/NotificationReplySettings_CL.adoc[NotificationReplySettings]`
-|Класс настроек компонента обработки ответа на уведомление
-
-|`xref:Entities/NotificationSendingSettings_CL.adoc[NotificationSendingSettings]`
+|`xref:Entities/CardNotificationSendingSettings/NotificationSendingSettings_CL.adoc[NotificationSendingSettings]`
 |Карточка настроек рассылки уведомлений
 
-|`xref:Entities/NotificationSendingSettingsMainInfo_CL.adoc[NotificationSendingSettingsMainInfo]`
+|`xref:Entities/CardNotificationSendingSettings/NotificationSendingSettingsMainInfo_CL.adoc[NotificationSendingSettingsMainInf]`
 |Основная информация карточки настройки рассылки уведомлений
 
-|`xref:Entities/NotificationServiceEvent_CL.adoc[NotificationServiceEvent]`
-|События
+|`xref:Entities/CardNotificationSettings/NotificationRecipient_CL.adoc[NotificationRecipien]`
+|Получатель уведомления
 
-|`xref:Entities/NotificationServiceEventData_CL.adoc[NotificationServiceEventData]`
-|Данные возникшего события
+|`xref:Entities/CardNotificationSettings/NotificationExcludedRecipient_CL.adoc[NotificationExcludedRecipien]`
+|Исключённый из рассылки получатель уведомления
 
-|`xref:Entities/NotificationServiceEvents_CL.adoc[NotificationServiceEvents]`
-|Справочник событий уведомлений
+|`xref:Entities/CardNotificationSettings/NotificationRecipientType_EN.adoc[NotificationRecipientTyp]`
+|Тип получателя уведомления
 
-|`xref:Entities/NotificationServiceSettings_CL.adoc[NotificationServiceSettings]`
-|Справочник настроек сервиса уведомлений
+|`xref:Entities/CardNotificationSettings/NotificationSettings_CL.adoc[NotificationSetting]`
+|Карточка настроек уведомления
 
-|`xref:Entities/NotificationSettings_CL.adoc[NotificationSettings]`
-|Справочник настроек сервиса уведомлений
-
-|`xref:Entities/NotificationSettingsMainInfo_CL.adoc[NotificationSettingsMainInfo]`
+|`xref:Entities/CardNotificationSettings/NotificationSettingsMainInfo_CL.adoc[NotificationSettingsMainInf]`
 |Основная информация карточки настроек уведомления
 
-|`xref:Entities/NotificationTransformSettings_CL.adoc[NotificationTransformSettings]`
-|Класс с настройками и параметрами преобразования модели данных в модель уведомления
+|`xref:Entities/CardSchedule/CardSchedule_CL.adoc[CardSchedule]`
+|Карточка расписания
 
-|`xref:Entities/SendComponentSettings_CL.adoc[SendComponentSettings]`
+|`xref:Entities/CardSchedule/ScheduleMainInfo_CL.adoc[ScheduleMainInf]`
+|Основная информация карточки расписания
+
+|`xref:Entities/CardSchedule/DailyRepeatType_EN.adoc[DailyRepeatTyp]`
+|Ежедневное повторение
+
+|`xref:Entities/CardSchedule/MonthlyType_EN.adoc[MonthlyTyp]`
+|Ежемесячное повторение
+
+|`xref:Entities/CardSchedule/ScheduleType_EN.adoc[ScheduleTyp]`
+|Тип расписания
+
+|`xref:Entities/CardSchedule/WeekBitmask_EN.adoc[WeekBitmas]`
+|Маска дней недели
+
+|`xref:Entities/RefNotificationEvents/NotificationServiceEvent_CL.adoc[NotificationServiceEven]`
+|События справочника событий уведомлений
+
+|`xref:Entities/RefNotificationEvents/NotificationServiceEvents_CL.adoc[NotificationServiceEvent]`
+|Справочник событий уведомлений
+
+|`xref:Entities/RefNotificationServiceSettings/DataContextComponentSettings_CL.adoc[DataContextComponentSettings]`
+|Класс настроек компонента контекста данных
+
+|`xref:Entities/RefNotificationServiceSettings/DataSourceComponentSettings_CL.adoc[DataSourceComponentSettings]`
+|Запись в справочнике компонента источника данных
+
+|`xref:Entities/RefNotificationServiceSettings/DataSourcePostHandlerComponentSettings_CL.adoc[DataSourcePostHandlerComponentSetting]`
+|Запись в справочнике компонента постобработки данных
+
+|`xref:Entities/RefNotificationServiceSettings/NotificationReplySettings_CL.adoc[NotificationReplySettings]`
+|Класс настроек компонента обработки ответа на уведомление
+
+|`xref:Entities/RefNotificationServiceSettings/NotificationServiceSettings_Cl.adoc[NotificationServiceSettings]`
+|Справочник настроек сервиса уведомлений
+
+|`xref:Entities/RefNotificationServiceSettings/SendComponentSettings_CL.adoc[SendComponentSetting]`
 |Класс настроек компонента отправки уведомления
 
-|`xref:Entities/TransformComponentSettings_CL.adoc[TransformComponentSettings]`
+|`xref:Entities/RefNotificationServiceSettings/TransformComponentSettings_CL.adoc[TransformComponentSettings]`
 |Класс настроек компонента формирования уведомления
+
+|`xref:Entities/AttachmentInfo_CL.adoc[AttachmentInf]`
+|Информация о файловом вложении уведомления
+
+|`xref:Entities/NotificationForSend_CL.adoc[NotificationForSen]`
+|Модель сформированного и готового к отправке уведомления, должно быть сериализуемым в строку
+
+|`xref:Entities/NotificationObjectData_CL.adoc[NotificationObjectDat]`
+|Данные объекта
+
+|`xref:Entities/NotificationObjectGroupInfo_CL.adoc[NotificationObjectGroupInf]`
+|Информация о группе объектов
+
+|`xref:Entities/NotificationObjectInfo_CL.adoc[NotificationObjectInf]`
+|Информация об объекте
+
+|`xref:Entities/NotificationServiceEventData_CL.adoc[NotificationServiceEventDat]`
+|Данные возникшего события
+
+|`xref:Entities/NotificationTransformSettings_CL.adoc[NotificationTransformSetting]`
+|Класс с настройками и параметрами преобразования модели данных в модель уведомления
 
 |===

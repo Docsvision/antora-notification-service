@@ -1,0 +1,59 @@
+= IScheduleService -- интерфейс
+
+Сервис работы с расписанием уведомлений
+
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Interfaces`
+* *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public interface IScheduleService : IContextService
+----
+
+== Методы
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`StartSchedule(CardSchedule)`
+a|Запускает расписание
+
+.Параметры:
+* `scheduleCard` -- карточка расписания
+
+|`StopSchedule(CardSchedule)`
+a|Останавливает расписание
+
+.Параметры:
+* `scheduleCard` -- карточка расписания
+
+|`CalculateNextScheduleDateTime(CardSchedule, DateTime?, bool)`
+a|Вычисляет следующую дату срабатывания расписания
+
+.Параметры:
+* `xref:CardLib/CardDefs/CardSchedule_CL.adoc[scheduleCard]` -- карточка расписания
+* `http://msdn.microsoft.com/ru-ru/library/system.datetime.aspx[previousDateTime]` -- предыдущая дата
+* `http://msdn.microsoft.com/ru-ru/library/system.boolean.aspx[compareNow]` -- сравнивать с текущим временем
+
+*Возвращаемое значение*: `http://msdn.microsoft.com/ru-ru/library/system.datetime.aspx[DateTime]` -- следующая дата срабатывания
+
+|`CalculateNextScheduleDateTime(CardSchedule, DateTime?)`
+a|Вычисляет следующую дату срабатывания расписания
+
+.Параметры:
+* `xref:CardLib/CardDefs/CardSchedule_CL.adoc[scheduleCard]` -- карточка расписания
+* `http://msdn.microsoft.com/ru-ru/library/system.datetime.aspx[previousDateTime]` -- предыдущая дата
+
+*Возвращаемое значение*: `http://msdn.microsoft.com/ru-ru/library/system.datetime.aspx[DateTime]` -- следующая дата срабатывания
+
+|`SetNextScheduleDateTime(CardSchedule, DateTime?)`
+a|Устанавливает следующую дату срабатывания расписания
+
+.Параметры:
+* `xref:CardLib/CardDefs/CardSchedule_CL.adoc[scheduleCard]` -- карточка расписания
+* `http://msdn.microsoft.com/ru-ru/library/system.datetime.aspx[nextDateTime]` -- следующая дата
+
+|===

@@ -2,14 +2,14 @@
 
 Справочник событий уведомлений
 
-* *Пространство имён:* `DocsVision.CardLib.CardDefs`
+* *Пространство имён:* `DocsVision.NotificationService.CardLib.CardDefs`
 * *Сборка:* `Docsvision.NotificationService.ObjectModel.dll`
 
 == Синтаксис
 
 [source,csharp]
 ----
-public class RefNotificationEvents
+public static class RefNotificationEvents
 ----
 
 == Свойства
@@ -19,9 +19,9 @@ public class RefNotificationEvents
 |Имя |Описание
 
 |`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[ID]`
-|Идентификатор карточки
+|Идентификатор справочника
 
 |`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Alias]`
-|Название карточки
+|Наименование
 
 |===

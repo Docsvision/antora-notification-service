@@ -2,7 +2,7 @@
 
 Информация о файловом вложении уведомления
 
-* *Пространство имён:* `DocsVision.CardLib.Entities`
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Entities`
 * *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
 
 == Синтаксис
@@ -21,7 +21,7 @@ public class AttachmentInfo
 |`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Name]`
 |Преобразованное название вложения
 
-|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[FileId]`
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[FileId]`
 |Идентификатор файла вложения
 
 |===

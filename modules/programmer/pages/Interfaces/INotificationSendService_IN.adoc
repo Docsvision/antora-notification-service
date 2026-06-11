@@ -1,6 +1,6 @@
 = INotificationSendService -- интерфейс
 
-Интерфейс сервиса с основной логикой отправки сформированных уведомлений. Должен осуществить отправку уведомления через указанный компонент\канал отправки.
+Сервис отправки подготовленных уведомлений
 
 * *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Interfaces`
 * *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`

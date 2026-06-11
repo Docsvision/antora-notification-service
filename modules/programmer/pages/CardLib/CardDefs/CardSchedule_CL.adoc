@@ -1,0 +1,27 @@
+= CardSchedule -- класс
+
+Карточка настроек рассылки уведомлений
+
+* *Пространство имён:* `DocsVision.NotificationService.CardLib.CardDefs`
+* *Сборка:* `Docsvision.NotificationService.ObjectModel.dll`
+
+== Синтаксис
+
+[source,csharp]
+----
+public static class CardSchedule
+----
+
+== Свойства
+
+[cols=",",options="header"]
+|===
+|Имя |Описание
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[ID]`
+|Идентификатор типа
+
+|`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Alias]`
+|Наименование
+
+|===

@@ -2,7 +2,7 @@
 
 Данные возникшего события
 
-* *Пространство имён:* `DocsVision.CardLib.Entities`
+* *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Entities`
 * *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
 
 == Синтаксис
@@ -24,8 +24,14 @@ public class NotificationServiceEventData
 |`http://msdn.microsoft.com/ru-ru/library/system.boolean.aspx[IsSpecificEventId]`
 |Особое или простое событие
 
-|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[ObjectIds]`
+|`List<http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[Guid]> ObjectIds`
 |Список идентификаторов объектов для которых возникло событие и требуется уведомление
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[TemplateId]`
+|Идентификатор карточки настроек
+
+|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[SourceCardId]`
+|Идентификатор карточки настроек рассылки
 
 |`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Parameters]`
 |Сериализованные дополнительные параметры уведомления
