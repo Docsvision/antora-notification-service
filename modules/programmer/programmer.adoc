@@ -7,7 +7,6 @@
 *** xref:send-components.adoc[]
 *** xref:source-components.adoc[]
 *** xref:post-processing-components.adoc[]
-*** xref:auxiliary-modules.adoc[]
 
 ** xref:ObjectModel.adoc[]
 

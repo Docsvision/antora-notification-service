@@ -1,6 +1,5 @@
-.Работа с модулем {ns}
+.xref:index.adoc[Работа с модулем {ns}]
 * xref:index.adoc[]
-** xref:management-panel.adoc[]
 ** xref:sending-card.adoc[]
 *** xref:on-event.adoc[]
 *** xref:on-schedule.adoc[]
