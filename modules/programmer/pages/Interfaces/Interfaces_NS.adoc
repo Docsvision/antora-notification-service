@@ -15,7 +15,7 @@
 |Интерфейс инициализации со строкой настроек.
 
 |`xref:Interfaces/INotificationCardService_IN.adoc[INotificationCardService]`
-|Интерфейс инициализации карточки настроек уведомления
+|Интерфейс сервиса работы с карточками уведомлений
 
 |`xref:Interfaces/INotificationDataSource_IN.adoc[INotificationDataSource_IN]`
 |Интерфейс компонента источника данных
@@ -30,7 +30,7 @@
 |Интерфейс сервиса регистрации событий уведомлений
 
 |`xref:Interfaces/INotificationObjectDataContext_IN.adoc[INotificationObjectDataContext]`
-|Интерфейс компонента для отправки уведомлений (канала уведомлений)
+|Интерфейс контекста данных объекта. Нужен для выгрузки данных объекта в произвольном формате
 
 |`xref:Interfaces/INotificationSendChannel_IN.adoc[INotificationSendChannel]`
 |Интерфейс компонента для отправки уведомлений (канала уведомлений)

@@ -19,15 +19,15 @@ public sealed class NotificationServiceServiceFactory : ServiceFactory
 |Имя |Описание
 
 |`GetService(Type)`
-a|Получает тип сервиса
+a|Получает сервис указанного типа
 
 *Возвращаемое значение*: сервис в виде объекта
 
 .Параметры:
-* `serviceType` --
+* `serviceType` -- запрашиваемый тип сервиса
 
 |`RegisterFactory(ObjectContext)`
-a|Регистрирует фабрику
+a|Регистрирует фабрику в контексте, позволяя из контекста обращаться к сервисам модуля
 
 .Параметры:
 * `objectContext` -- контекст объекта

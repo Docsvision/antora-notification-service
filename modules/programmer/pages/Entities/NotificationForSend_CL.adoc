@@ -52,27 +52,3 @@ public class NotificationForSend
 |Дополнительные файлы-вложения
 
 |===
-
-== Методы
-
-[cols=",",options="header"]
-|===
-|Имя |Описание
-
-|`ToString()`
-a|Сериализует модель уведомления в строку
-
-.Аргументы:
-* "Тема: \{0}" -- Theme -- "<нет>"
-* Body -- "<нет>"
-* "Содержание: \{0}"  -- body.Length
-* "Вложения: \{0} (\{1})" -- MainAttachments?.Count
-* "Получатели: \{0} (\{1}) за исключением \{2}" -- Recipients?.Count
-* "RecipientId: \{0}" -- RecipientId
-* "SenderAddress: \{0}" -- SenderAddress
-* "SourceCardId: \{0}" -- SourceCardId
-* "CardId: \{0}" -- CardId
-
-*Возвращаемое значение*: строка с описанием уведомления
-
-|===

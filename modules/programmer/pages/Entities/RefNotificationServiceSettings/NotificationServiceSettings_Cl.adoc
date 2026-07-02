@@ -31,10 +31,9 @@ public class NotificationServiceSettings : BaseCardSectionRow
 |Компоненты обработки ответа на уведомления
 
 |`ObjectCollection<xref:Entities/RefNotificationServiceSettings/DataSourceComponentSettings_CL.adoc[DataSourceComponentSettings]> DataSourceComponents`
-|Компоненты обработки ответа на уведомления
+|Компоненты источника данных для уведомления
 
 |`ObjectCollection<xref:Entities/RefNotificationServiceSettings/DataSourcePostHandlerComponentSettings_CL.adoc[DataSourcePostHandlerComponentSettings]> DataSourcePostHandlerComponents`
-|Компоненты обработки ответа на уведомления
-
+|Компоненты постобработки источника данных
 
 |===

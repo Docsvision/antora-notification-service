@@ -22,7 +22,7 @@ public class MtsSmsSendComponent : INotificationSendChannel, IInitializeWithSett
 |Адрес отправителя
 
 |`http://msdn.microsoft.com/ru-ru/library/system.int32.aspx[MessageLimit]`
-|Лимит сообщений
+|Лимит размера одного сообщения
 
 |===
 
@@ -50,13 +50,13 @@ public class MtsSmsSendComponent : INotificationSendChannel, IInitializeWithSett
 |Имя |Описание
 
 |`Initialize(string)`
-a|Инициализирует отправку
+a|Инициализирует экземпляр класса
 
 .Параметры:
 * `settings` -- сериализованные настройки
 
 |`InitializeWithContext(ObjectContext, string)`
-a|Инициализирует отправку с контекстом
+a|Инициализирует экземпляр класса с контекстом
 
 .Параметры:
 * `context` -- контекст объекта

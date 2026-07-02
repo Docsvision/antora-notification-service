@@ -1,6 +1,6 @@
 = ScheduleType -- перечисление
 
-Тип расписания
+Тип периодичности расписания
 
 * *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Entities`
 * *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
@@ -9,7 +9,7 @@
 
 [source,csharp]
 ----
-public enum MonthlyType
+public enum ScheduleType
 ----
 
 == Члены

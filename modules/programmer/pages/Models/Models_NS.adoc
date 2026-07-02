@@ -1,6 +1,6 @@
 = DocsVision.NotificationService.ObjectModel.Models -- пространство имён
 
-Пространство имён `DocsVision.NotificationService.ObjectModel.Models` содержит интерфейсы для работы с сервисом уведомлений.
+Пространство имён `DocsVision.NotificationService.ObjectModel.Models` содержит служебные классы для работы с сервисом уведомлений.
 
 == Классы
 
@@ -12,7 +12,7 @@
 |Класс модель аргумента для сервиса отправки сообщений
 
 |`xref:Models/NotificationServiceEventArgs_CL.adoc[NotificationServiceEventArgs]`
-|Класс-модель регистрации события для записи\чтения его в очередь событий-уведомлений для обработки
+|Класс-модель регистрации события подготовки уведомления для записи\чтения его в очередь событий-уведомлений для обработки
 
 // |`xref:Models/ResDescriptionAttribute_CL.adoc[ResDescriptionAttribute]`
 // |Локализованное описание элемента из Resources[.ru].resx
@@ -21,7 +21,7 @@
 // |Локализованное наименование элемента из Resources[.ru].resx
 
 |`xref:Models/ScheduleEventArgs_CL.adoc[ScheduleEventArgs]`
-|Класс-модель регистрации события для записи\чтения его в очередь событий-уведомлений для обработки
+|Класс-модель регистрации события проверки расписания для записи\чтения его в очередь событий-уведомлений для обработки
 
 |===
 

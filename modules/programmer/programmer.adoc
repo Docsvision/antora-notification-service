@@ -80,7 +80,6 @@
 ***** xref:Extensions/MtsSmsSendComponent.Options_CL.adoc[]
 ***** xref:Extensions/MtsSmsSendComponent.Sender_CL.adoc[]
 ***** xref:Extensions/MtsSmsSendComponent.SendRequestBody1_CL.adoc[]
-***** xref:Extensions/MtsSmsSendComponent.SendRequestBody_CL.adoc[]
 ***** xref:Extensions/MtsSmsSendComponent.SMSServiceSettings_CL.adoc[]
 **** xref:Extensions/OverdueTasksNotificationDataSource_CL.adoc[]
 **** xref:Extensions/PlainTextComponent_CL.adoc[]

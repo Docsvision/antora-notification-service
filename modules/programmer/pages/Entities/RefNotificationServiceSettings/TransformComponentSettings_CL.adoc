@@ -30,7 +30,4 @@ public class TransformComponentSettings : BaseCardSectionRow
 |`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Settings]`
 |Сериализованные настройки компонента
 
-|`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[MessagesCardID]`
-|Идентификатор привязанной карточки сообщений
-
 |===

@@ -1,6 +1,6 @@
 = CardSchedule.MainInfo -- класс
 
-Основная информация карточки настроек рассылки уведомлений
+Основная информация карточки расписания рассылки уведомлений
 
 * *Пространство имён:* `DocsVision.NotificationService.CardLib.CardDefs`
 * *Сборка:* `Docsvision.NotificationService.ObjectModel.dll`

@@ -28,7 +28,7 @@ public class NotificationObjectData
 |Идентификатор источника уведомлений
 
 |`http://msdn.microsoft.com/ru-ru/library/system.object.aspx[Data]`
-|Что угодно, главное, чтобы используемый компонент для преобразования данных знал, что лежит в этом `object`
+|Данные для построения уведомления в любой форме, которую может использовать выбранный компонент преобразования
 
 |`List<http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[Guid]> MainFiles`
 |Список идентификаторов основных файлов объекта

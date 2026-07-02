@@ -33,7 +33,7 @@ public abstract class CardXmlExportDataContext : INotificationObjectDataContext,
 |Имя |Описание
 
 |`CardXmlExportDataContext()`
-|Инициализирует новый экземпляр класса `CardXmlExportDataContext`. Инициализация компонента необходима при использовании конструктора без параметров.
+|Создаёт новый экземпляр класса `CardXmlExportDataContext`. Дополнительная инициализация созданного компонента необходима при использовании конструктора без параметров.
 
 |`CardXmlExportDataContext(ObjectContext, NotificationSettings)`
 a|Инициализирует новый экземпляр класса `CardXmlExportDataContext` с указанными свойствами
@@ -51,11 +51,11 @@ a|Инициализирует новый экземпляр класса `CardX
 |Имя |Описание
 
 |`InitializeWithContext(ObjectContext, string)`
-a|Возвращает модель данных для формирования уведомлений
+a|Передаёт экземпляру класса контекст и настройки
 
 .Параметры:
 * `context` -- контекст
-* `http://msdn.microsoft.com/ru-ru/library/system.string.aspx[settings]` -- карточка настроек
+* `http://msdn.microsoft.com/ru-ru/library/system.string.aspx[settings]` -- сериализованная в строку карточка настроек
 
 |`GetNotificationObjectData(Guid)`
 a|Возвращает модель данных для формирования уведомлений

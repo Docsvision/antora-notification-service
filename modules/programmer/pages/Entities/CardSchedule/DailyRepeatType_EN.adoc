@@ -1,6 +1,6 @@
 = DailyRepeatType -- перечисление
 
-Ежедневное повторение
+Тип повторений рассылки в течение дня
 
 * *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Entities`
 * *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`

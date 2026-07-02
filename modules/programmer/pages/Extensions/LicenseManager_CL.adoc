@@ -9,7 +9,7 @@
 
 [source,csharp]
 ----
-public abstract class CardXmlExportDataContext : INotificationObjectDataContext, IInitializeWithObjectContext
+public static class LicenseManager
 ----
 
 == Свойства
@@ -29,13 +29,13 @@ public abstract class CardXmlExportDataContext : INotificationObjectDataContext,
 
 |===
 
-== Конструкторы
+== Методы
 
 [cols=",",options="header"]
 |===
 |Имя |Описание
 
 |`GetFeatures(UserSession session)`
-|Получает опции лицензии
+|Получает опции лицензии, используемые сервисом уведомлений
 
 |===

@@ -53,9 +53,6 @@
 |`xref:Extensions/MtsSmsSendComponent.SendRequestBody1_CL.adoc[MtsSmsSendComponent.SendRequestBody1]`
 |Тело запроса для отправки SMS через МТС Маркетолог
 
-|`xref:Extensions/MtsSmsSendComponent.SendRequestBody_CL.adoc[MtsSmsSendComponent.SendRequestBody]`
-|Тело запроса для отправки SMS через МТС Маркетолог
-
 |`xref:Extensions/MtsSmsSendComponent.SMSServiceSettings_CL.adoc[MtsSmsSendComponent.SMSServiceSettings]`
 |Настройки SMS-сервиса (отправитель, лимит сообщений)
 

@@ -9,7 +9,7 @@
 
 [source,csharp]
 ----
-public enum MonthlyType
+public enum WeekBitmask
 ----
 
 == Члены

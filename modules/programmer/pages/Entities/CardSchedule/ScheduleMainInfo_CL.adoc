@@ -48,7 +48,7 @@ public class ScheduleMainInfo : BaseCardSectionRow
 |`http://msdn.microsoft.com/ru-ru/library/system.int32.aspx[RepeatMonthWeekDay]`
 |Маска дней недели в месяце (1-7)
 
-|`xref:Entities/CardSchedule/DailyRepeatType_EN.adoc[DailyRepeatType`
+|`xref:Entities/CardSchedule/DailyRepeatType_EN.adoc[DailyRepeatType]`
 |Тип периодичности в рамках дня
 
 |`http://msdn.microsoft.com/ru-ru/library/system.int32.aspx[DailyPeriod]`

@@ -25,7 +25,7 @@ public class NotificationSendingSettingsMainInfo : BaseCardSectionRow
 |Событие из справочника событий
 
 |`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[NotificationReferenceListId]`
-|Ссылки на созданные карточки настройки рассылки уведомлений
+|Ссылки на созданные карточки шаблонов уведомлений
 
 |`http://msdn.microsoft.com/ru-ru/library/system.boolean.aspx[Periodic]`
 |Указывает, является ли уведомление периодическим
@@ -46,6 +46,6 @@ public class NotificationSendingSettingsMainInfo : BaseCardSectionRow
 |Параметры компонента постобработки данных
 
 |`http://msdn.microsoft.com/ru-ru/library/system.boolean.aspx[Enabled]`
-|Указывает, активна ли данная настройка уведомления
+|Указывает, активна ли данная рассылка
 
 |===

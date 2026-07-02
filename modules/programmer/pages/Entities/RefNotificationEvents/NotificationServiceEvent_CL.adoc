@@ -33,4 +33,7 @@ public class NotificationServiceEvent : BaseCardSectionRow
 |`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[StateId]`
 |Идентификатор состояния карточки, связанного с событием
 
+|`ObjectCollection<xref:Entities/RefNotificationEvents/NotificationServiceEvent_CL.adoc[NotificationServiceEvent]> SubEvents`
+|Список событий дочерних по отношению к текущему
+
 |===

@@ -36,7 +36,7 @@ public class NotificationRecipient : BaseCardSectionRow
 |`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[Value]`
 |Адрес получателя
 
-|`xref:Entities/CardNotificationSettings/NotificationRecipientType_EN.adoc[Value]`
+|`xref:Entities/CardNotificationSettings/NotificationRecipientType_EN.adoc[Type]`
 |Тип получателя (интерпретация ID)
 
 |===

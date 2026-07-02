@@ -27,7 +27,7 @@
 |Основная информация карточки настроек рассылки уведомления
 
 |`xref:CardLib/CardDefs/CardSchedule_CL.adoc[CardSchedule]`
-|Карточка настроек рассылки уведомлений
+|Карточка расписания рассылки уведомлений
 
 |`xref:CardLib/CardDefs/CardSchedule.MainInfo_CL.adoc[CardSchedule.MainInfo]`
 |Основная информация карточки настроек рассылки уведомлений

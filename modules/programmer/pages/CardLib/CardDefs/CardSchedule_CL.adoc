@@ -1,6 +1,6 @@
 = CardSchedule -- класс
 
-Карточка настроек рассылки уведомлений
+Карточка расписания рассылки уведомлений
 
 * *Пространство имён:* `DocsVision.NotificationService.CardLib.CardDefs`
 * *Сборка:* `Docsvision.NotificationService.ObjectModel.dll`

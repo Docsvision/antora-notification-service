@@ -1,6 +1,6 @@
 = INotificationCardService -- интерфейс
 
-Сервис работы с карточками уведомлений
+Интерфейс сервиса работы с карточками уведомлений
 
 * *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Interfaces`
 * *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`
@@ -40,7 +40,7 @@ a|Инициализирует карточку расписания
 .Параметры:
 * `parentCardId` -- ID родительской карточки
 
-*Возвращаемое значение*: `xref:CardLib/CardDefs/CardSchedule_CL.adoc[CardSchedule]` -- карточка расписания
+*Возвращаемое значение*: `xref:CardLib/CardDefs/CardSchedule_CL.adoc[CardSchedule]` -- карточка расписания рассылки уведомлений
 
 |`GetDataTransformFlags(Guid);`
 a|Получает параметры компонента формирования модели уведомления

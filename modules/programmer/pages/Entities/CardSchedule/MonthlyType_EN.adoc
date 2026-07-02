@@ -1,6 +1,6 @@
 = MonthlyType -- перечисление
 
-Ежемесячное повторение
+Тип повторений рассылки в течение месяца
 
 * *Пространство имён:* `DocsVision.NotificationService.ObjectModel.Entities`
 * *Сборка:* `DocsVision.NotificationService.ObjectModel.dll`

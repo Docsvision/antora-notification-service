@@ -47,14 +47,14 @@ public class MailSendComponent : INotificationSendChannel, IInitializeWithSettin
 |Имя |Описание
 
 |`InitializeWithContext(ObjectContext, string)`
-a|Инициализирует отправку с указанным контекстом
+a|Инициализирует экземпляр класса с указанным контекстом
 
 .Параметры:
 * `context` -- контекст объекта
 * `settings` -- сериализованные настройки
 
 |`Initialize(string)`
-a|Инициализирует отправку с указанными настройками
+a|Инициализирует экземпляр класса с указанными настройками
 
 .Параметры:
 * `settings` -- сериализованные настройки

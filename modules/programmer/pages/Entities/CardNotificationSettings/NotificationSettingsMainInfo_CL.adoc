@@ -25,22 +25,22 @@ public class NotificationSettingsMainInfo : BaseCardSectionRow
 |Описание
 
 |`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[NotificationSubject]`
-|Настройки темы уведомления
+|Отдельный компонент преобразования для настройки темы уведомления
 
 |`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[NotificationText]`
-|Настройки тела уведомления
+|Отдельный компонент преобразования для настройки тела уведомления
 
 |`http://msdn.microsoft.com/ru-ru/library/system.string.aspx[NotificationRecipients]`
-|Настройки получателей уведомлений
+|Отдельный компонент преобразования для настройки получателей уведомлений
 
 |`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[SubjectCustomComponent]`
-|Настройки темы уведомления
+|Отдельный компонент преобразования для темы уведомления
 
 |`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[TextCustomComponent]`
-|Настройки тела уведомления
+|Отдельный компонент преобразования для тела уведомления
 
 |`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[RecipientsCustomComponent]`
-|Настройки получателей уведомлений
+|Отдельный компонент преобразования для получателей уведомлений
 
 |`http://msdn.microsoft.com/ru-ru/library/system.guid.aspx[DataContextComponentId]`
 |Компонент контекста данных

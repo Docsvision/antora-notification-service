@@ -19,7 +19,7 @@ public enum NotificationDataTransformFlags
 |Имя |Описание
 
 |`None` = `0`
-|Доступен параметр Темы
+|Нет доступных параметров
 
 |`SupportsSubjectParam` = `1`
 |Доступен параметр Темы
