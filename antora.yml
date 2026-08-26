@@ -1,6 +1,6 @@
 name: notification
-version: '5.5.1'
-prerelease: false
+version: '5.5.1_GBL-5015'
+prerelease: true
 title: Сервис уведомлений
 asciidoc:
   attributes:
